@@ -20,7 +20,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Purple Screen"/>
                                 <connections>
-                                    <segue destination="EgG-Q0-Ko0" kind="push" id="BqT-OV-aVO"/>
+                                    <segue destination="EgG-Q0-Ko0" kind="push" id="scd-CF-D4g"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCE-rv-O6o">
@@ -28,7 +28,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Red Screen"/>
                                 <connections>
-                                    <segue destination="Q9F-7T-Q5t" kind="push" id="850-wj-Vpy"/>
+                                    <segue destination="Q9F-7T-Q5t" kind="push" id="5Lq-0C-YvD"/>
                                 </connections>
                             </button>
                         </subviews>
