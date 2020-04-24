@@ -24,7 +24,9 @@ class LoginViewController: UIViewController {
     
     @IBAction func Logout(_ sender: Any) {
         //로그아웃 버튼
+
         self.dismiss(animated: true, completion: nil)
+
     }
     
     private func setLables() {

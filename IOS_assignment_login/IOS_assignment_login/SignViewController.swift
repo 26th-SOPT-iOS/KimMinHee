@@ -27,7 +27,12 @@ class SignViewController: UIViewController {
         
         receiveViewController.yourId = idTextField.text
         receiveViewController.yourPw = pwTextField.text
-        self.present(receiveViewController, animated: true, completion: nil)
+        
+        self.present(receiveViewController, animated: true) {
+            //push -> pop
+            self.navigationController?.popViewController(animated: false)
+        }
+        
         idTextField.text=""
         pwTextField.text=""
     }
