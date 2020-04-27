@@ -12,9 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        allButton.forEach({
+            $0.layer.cornerRadius = $0.layer.bounds.size.width * 0.46
+        })
         // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBOutlet var allButton: [UIButton]!
 }
 
