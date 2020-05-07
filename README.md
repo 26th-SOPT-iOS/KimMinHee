@@ -10,5 +10,5 @@
 |**4/25** | <center>로그인 화면 레이아웃 + 스크롤뷰</center> | *도전과제 반만 완료* |
 
 ## 과제 설명
-[ ✔ ️1st week 과제 ](./addreadME/1stweek.md)
+[ ✔ ️1st week 과제 ](./addreadME/1stweek.md)<br>
 [ ✔ ️2st week 과제 ](./addreadME/2ndweek.md)
