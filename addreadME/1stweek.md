@@ -21,9 +21,6 @@ self.present(receiveViewController, animated: true, completion: nil)
 ```
 *로그인하기*  Button은 present 방식으로 전환
 
-<br>
-<br>
-<br>
 
 #### 값 전달하기
 
