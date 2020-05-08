@@ -27,7 +27,7 @@ self.present(receiveViewController, animated: true, completion: nil)
 
 ✅ 메인화면에서 로그인버튼 Click시 화면에 입력된 id,pw 값 다음 화면으로 전달
 
-![1stweek_값전달](./image/1stweek_값전달.png)
+![1stweek_값절달](./image/1stweek_값전달.png)
 ```python
 private func setLables() {
     guard let yourId = self.yourId else{return}
