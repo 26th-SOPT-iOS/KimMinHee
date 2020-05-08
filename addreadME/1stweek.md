@@ -1,7 +1,6 @@
-# 1주차 과제
-## 로그인 화면 구현
+## 1주차 과제 📲 로그인, 회원가입 UI 구현하기
 
-### 세그(Segue) 구현
+#### 세그(Segue) 구현
 * 로그인 화면
     * 회원가입 Button
 
@@ -10,7 +9,7 @@ guard let SignPush = self.storyboard?.instantiateViewController(identifier: "sig
 
 self.navigationController?.pushViewController(SignPush, animated: true)
 ```
-회원가입버튼은 push로 전달
+회원가입 Button은 push로 전달
 
  * 로그인하기 Button
  
@@ -20,13 +19,15 @@ guard let receiveViewController = self.storyboard?.instantiateViewController(ide
 receiveViewController.modalPresentationStyle = .fullScreen
 self.present(receiveViewController, animated: true, completion: nil)
 ```
-*로그인하기* 버튼은 present 방식으로 전환
+*로그인하기*  Button은 present 방식으로 전환
+
+
 
 ### 값 전달하기
 
-✅ 메인화면에서 로그인버튼 Click => 화면에 입력된 id,pw 값 다음 화면으로 전달
-<img width="458" alt="1stweek 값전달" src="https://user-images.githubusercontent.com/51286963/81373078-d7065780-9136-11ea-9dc8-97db37947d0a.png">
+✅ 메인화면에서 로그인버튼 Click시 화면에 입력된 id,pw 값 다음 화면으로 전달
 
+![1stweek_값전달](./image/1stweek_값전달.png)
 ```python
 private func setLables() {
     guard let yourId = self.yourId else{return}
