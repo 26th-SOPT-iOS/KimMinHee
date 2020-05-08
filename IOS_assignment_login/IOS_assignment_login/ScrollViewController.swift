@@ -35,7 +35,13 @@ extension ScrollViewController: UIScrollViewDelegate {
             image.frame = imageViewFrame
             
         } else {
-         
+            // 되지 않아요.. 스크롤이 자꾸 돌아가요... 하지만 해결하지 못했습니다. 저는 노력했습니다.
+            /*
+            var height: CGFloat! = CGFloat(210) - scrollView.contentOffset.y
+            height = height > CGFloat(50) ? height : CGFloat(50)
+
+            imageHeight.constant = height
+         */
             
         }
     }
