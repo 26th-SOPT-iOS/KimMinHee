@@ -17,6 +17,9 @@
 		3D5F60A6244AEDF300D9220F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F60A5244AEDF300D9220F /* LoginViewController.swift */; };
 		3D5F60AA244B02EE00D9220F /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F60A9244B02EE00D9220F /* SignViewController.swift */; };
 		3DA6C86E245BC3E800B91C5D /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6C86D245BC3E800B91C5D /* ScrollViewController.swift */; };
+		3DC8203E24658472007D8CE4 /* KoPubWorld Dotum_Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DC8203B24658467007D8CE4 /* KoPubWorld Dotum_Pro Bold.otf */; };
+		3DC8203F24658474007D8CE4 /* KoPubWorld Dotum_Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DC8203C24658468007D8CE4 /* KoPubWorld Dotum_Pro Light.otf */; };
+		3DC8204024658477007D8CE4 /* KoPubWorld Dotum_Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DC8203D2465846A007D8CE4 /* KoPubWorld Dotum_Pro Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		3D5F60A5244AEDF300D9220F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3D5F60A9244B02EE00D9220F /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		3DA6C86D245BC3E800B91C5D /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		3DC8203B24658467007D8CE4 /* KoPubWorld Dotum_Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPubWorld Dotum_Pro Bold.otf"; sourceTree = "<group>"; };
+		3DC8203C24658468007D8CE4 /* KoPubWorld Dotum_Pro Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPubWorld Dotum_Pro Light.otf"; sourceTree = "<group>"; };
+		3DC8203D2465846A007D8CE4 /* KoPubWorld Dotum_Pro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPubWorld Dotum_Pro Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,9 @@
 				3D5F60A5244AEDF300D9220F /* LoginViewController.swift */,
 				3D5F60A9244B02EE00D9220F /* SignViewController.swift */,
 				3DA6C86D245BC3E800B91C5D /* ScrollViewController.swift */,
+				3DC8203B24658467007D8CE4 /* KoPubWorld Dotum_Pro Bold.otf */,
+				3DC8203C24658468007D8CE4 /* KoPubWorld Dotum_Pro Light.otf */,
+				3DC8203D2465846A007D8CE4 /* KoPubWorld Dotum_Pro Medium.otf */,
 			);
 			path = IOS_assignment_login;
 			sourceTree = "<group>";
@@ -221,6 +230,9 @@
 				3D5F6080244AE5AB00D9220F /* LaunchScreen.storyboard in Resources */,
 				3D5F607D244AE5AB00D9220F /* Assets.xcassets in Resources */,
 				3D5F607B244AE5AA00D9220F /* Main.storyboard in Resources */,
+				3DC8203F24658474007D8CE4 /* KoPubWorld Dotum_Pro Light.otf in Resources */,
+				3DC8203E24658472007D8CE4 /* KoPubWorld Dotum_Pro Bold.otf in Resources */,
+				3DC8204024658477007D8CE4 /* KoPubWorld Dotum_Pro Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
