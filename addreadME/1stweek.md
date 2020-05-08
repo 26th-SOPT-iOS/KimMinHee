@@ -9,7 +9,7 @@ guard let SignPush = self.storyboard?.instantiateViewController(identifier: "sig
 
 self.navigationController?.pushViewController(SignPush, animated: true)
 ```
-회원가입 Button은 push로 전달
+회원가입 Button은 push로 전달합니다.
 
 	* 로그인 Button
  
@@ -19,7 +19,7 @@ guard let receiveViewController = self.storyboard?.instantiateViewController(ide
 receiveViewController.modalPresentationStyle = .fullScreen
 self.present(receiveViewController, animated: true, completion: nil)
 ```
-*로그인하기*  Button은 present 방식으로 전환
+*로그인하기*  Button은 present 방식으로 전환합니다.
 
 
 #### 값 전달하기
@@ -38,12 +38,12 @@ private func setLables() {
         
     }
 ```
-id와 pw를 전달받기 위해 let으로 상수 선언
+id와 pw를 전달받기 위해 let으로 상수 선언하고
 
 ```python
 	receiveViewController.yourId = idTextField.text
     receiveViewController.yourPw = pwTextField.text
 ```
-값을 전달해 줄 Controller에서 값을 전달
+값을 전달해 줄 Controller에서 TextField의 값을 넘겨줍니다.
 
 
