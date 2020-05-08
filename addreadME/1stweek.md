@@ -21,9 +21,11 @@ self.present(receiveViewController, animated: true, completion: nil)
 ```
 *로그인하기*  Button은 present 방식으로 전환
 
+<br>
+<br>
+<br>
 
-
-### 값 전달하기
+#### 값 전달하기
 
 ✅ 메인화면에서 로그인버튼 Click시 화면에 입력된 id,pw 값 다음 화면으로 전달
 
