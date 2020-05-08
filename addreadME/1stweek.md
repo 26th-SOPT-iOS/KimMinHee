@@ -27,7 +27,7 @@ self.present(receiveViewController, animated: true, completion: nil)
 
 ✅ 메인화면에서 로그인버튼 Click시 화면에 입력된 id,pw 값 다음 화면으로 전달
 
-<img src="./addreadME/image/1stweek_값전달.png" width="60%">
+<img width="458" alt="1stweek 값전달" src="https://user-images.githubusercontent.com/51286963/81373078-d7065780-9136-11ea-9dc8-97db37947d0a.png">
 
 ```python
 private func setLables() {
