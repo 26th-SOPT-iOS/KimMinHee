@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bVW-9i-9uA">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EDt-TC-B2q">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -20,24 +20,24 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="IOS_assignment_login" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CMR-50-EzR">
-                                <rect key="frame" x="37.5" y="406" width="300" height="44.5"/>
+                                <rect key="frame" x="41.5" y="342.5" width="331" height="49"/>
                                 <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KoPubWorldDotumPB" family="KoPubWorldDotum_Pro" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SOPT_LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="z2j-SR-Rtc">
-                                <rect key="frame" x="-15.5" y="150" width="406" height="136"/>
+                                <rect key="frame" x="105.5" y="150" width="203" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="z2j-SR-Rtc" secondAttribute="height" multiplier="203:68" id="2SS-Gg-CmA"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sRw-Lt-Duo">
-                                <rect key="frame" x="37.5" y="344" width="300" height="44"/>
+                                <rect key="frame" x="41.5" y="276" width="331" height="48.5"/>
                                 <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sRw-Lt-Duo" secondAttribute="height" multiplier="299:44" id="4sL-R6-DlJ"/>
@@ -47,7 +47,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-dF-7b3">
-                                <rect key="frame" x="37.5" y="489.5" width="300" height="48"/>
+                                <rect key="frame" x="41.5" y="430.5" width="331" height="53"/>
                                 <color key="backgroundColor" red="0.027450980392156862" green="0.23137254901960785" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YYA-dF-7b3" secondAttribute="height" multiplier="300:48" id="2gQ-v5-dvR"/>
@@ -61,16 +61,16 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="obQ-9U-3mP">
-                                <rect key="frame" x="70" y="554.5" width="235" height="23"/>
+                                <rect key="frame" x="89.5" y="500.5" width="235.5" height="23"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 회원이 아니신가요? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3t5-aQ-xoh">
-                                        <rect key="frame" x="0.0" y="0.0" width="151" height="23"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="151.5" height="23"/>
                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="15"/>
                                         <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WAX-d4-1Y2">
-                                        <rect key="frame" x="152" y="0.0" width="83" height="23"/>
+                                        <rect key="frame" x="152.5" y="0.0" width="83" height="23"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="회원 가입하기">
@@ -129,20 +129,20 @@
             <objects>
                 <viewController storyboardIdentifier="signViewController" id="6Ge-nC-DPO" customClass="SignViewController" customModule="IOS_assignment_login" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fao-Kh-Q04">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TeA-Pf-7vk">
-                                <rect key="frame" x="37.5" y="276.5" width="300" height="36"/>
+                                <rect key="frame" x="41.5" y="345" width="331" height="48.5"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="KoPubWorldDotumPB" family="KoPubWorldDotum_Pro" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SOPT_LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="egN-Cd-Rp4">
-                                <rect key="frame" x="121" y="99" width="133" height="36"/>
+                                <rect key="frame" x="133.5" y="143" width="147" height="48.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaT-BI-FYa">
-                                <rect key="frame" x="37.5" y="409.5" width="300" height="39.5"/>
+                                <rect key="frame" x="41.5" y="503" width="331" height="53"/>
                                 <color key="backgroundColor" red="0.0" green="0.16524714231491089" blue="0.54645234346389771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="16"/>
                                 <state key="normal" title="가입완료">
@@ -153,13 +153,13 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0yg-Js-w09">
-                                <rect key="frame" x="37.5" y="328.5" width="300" height="36"/>
+                                <rect key="frame" x="41.5" y="409.5" width="331" height="48.5"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="KoPubWorldDotumPB" family="KoPubWorldDotum_Pro" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqf-jJ-Jcw">
-                                <rect key="frame" x="145.5" y="145" width="84" height="37"/>
+                                <rect key="frame" x="165" y="201.5" width="84" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="vqf-jJ-Jcw" secondAttribute="height" multiplier="84:37" id="WH7-Vd-GZk"/>
                                 </constraints>
@@ -168,7 +168,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이름" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wUN-Zb-7eE">
-                                <rect key="frame" x="37.5" y="224" width="300" height="36.5"/>
+                                <rect key="frame" x="41.5" y="280.5" width="331" height="48.5"/>
                                 <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="KoPubWorldDotumPB" family="KoPubWorldDotum_Pro" pointSize="14"/>
@@ -219,7 +219,7 @@
             <objects>
                 <viewController storyboardIdentifier="loginViewController" modalPresentationStyle="fullScreen" id="Ayn-RH-xWx" customClass="LoginViewController" customModule="IOS_assignment_login" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9zL-Zo-Q6e">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FZ-4f-7rH">
@@ -308,7 +308,7 @@
                                                 <rect key="frame" x="28" y="270" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3D3-6h-tiB">
-                                                        <rect key="frame" x="10" y="117" width="94.5" height="20.5"/>
+                                                        <rect key="frame" x="10" y="117" width="94" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
                                                         <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <nil key="highlightedColor"/>
@@ -336,7 +336,7 @@
                                                 <rect key="frame" x="199" y="270" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCM-mp-Q6D">
-                                                        <rect key="frame" x="12" y="117" width="94.5" height="20.5"/>
+                                                        <rect key="frame" x="12" y="117" width="94" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
                                                         <color key="textColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -368,7 +368,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMP-vB-gnV">
-                                                        <rect key="frame" x="10" y="116" width="94.5" height="20.5"/>
+                                                        <rect key="frame" x="10" y="116" width="94" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -388,7 +388,7 @@
                                                 <rect key="frame" x="199" y="499" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6U-ik-25V">
-                                                        <rect key="frame" x="12" y="116" width="94.5" height="20.5"/>
+                                                        <rect key="frame" x="12" y="116" width="94" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -414,7 +414,7 @@
                                                 <rect key="frame" x="28" y="728" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b5-26-WkU">
-                                                        <rect key="frame" x="10" y="116" width="94.5" height="20.5"/>
+                                                        <rect key="frame" x="10" y="116" width="94" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -440,7 +440,7 @@
                                                 <rect key="frame" x="199" y="728" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ko-aJ-PnD">
-                                                        <rect key="frame" x="12" y="116" width="94.5" height="20.5"/>
+                                                        <rect key="frame" x="12" y="116" width="94" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -466,7 +466,7 @@
                                                 <rect key="frame" x="28" y="957" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbE-UO-l3G">
-                                                        <rect key="frame" x="10" y="116" width="94.5" height="20.5"/>
+                                                        <rect key="frame" x="10" y="116" width="94" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -492,7 +492,7 @@
                                                 <rect key="frame" x="199" y="957" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eG6-0n-wru">
-                                                        <rect key="frame" x="12" y="116" width="94.5" height="20.5"/>
+                                                        <rect key="frame" x="12" y="116" width="94" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -608,12 +608,118 @@
             </objects>
             <point key="canvasLocation" x="1368.8" y="400.29985007496254"/>
         </scene>
+        <!--Chatting View Controller-->
+        <scene sceneID="jDe-tO-c81">
+            <objects>
+                <viewController id="MCR-pK-fKV" customClass="ChattingViewController" customModule="IOS_assignment_login" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OTz-Fj-YJd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yrE-eP-njW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" rowHeight="88" id="lMS-Cd-DId">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="88"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lMS-Cd-DId" id="cSP-hB-lJo">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rC9-vG-ZkX">
+                                                    <rect key="frame" x="16" y="13" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="Yi5-8t-Ybp"/>
+                                                        <constraint firstAttribute="width" constant="60" id="wFw-Wh-bQz"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nt-EQ-H27">
+                                                    <rect key="frame" x="89" y="33" width="41" height="21"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rC9-vG-ZkX" firstAttribute="leading" secondItem="cSP-hB-lJo" secondAttribute="leading" constant="16" id="T1p-3D-F6h"/>
+                                                <constraint firstItem="7nt-EQ-H27" firstAttribute="leading" secondItem="rC9-vG-ZkX" secondAttribute="trailing" constant="13" id="gf0-ae-fdJ"/>
+                                                <constraint firstItem="rC9-vG-ZkX" firstAttribute="top" secondItem="cSP-hB-lJo" secondAttribute="top" constant="13" id="nN7-ea-419"/>
+                                                <constraint firstItem="7nt-EQ-H27" firstAttribute="top" secondItem="cSP-hB-lJo" secondAttribute="top" constant="33" id="rmD-Il-FJi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendsCell" rowHeight="94" id="gDY-B1-eQ9" customClass="FriendsCell" customModule="IOS_assignment_login" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="116" width="414" height="94"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gDY-B1-eQ9" id="38X-bW-vCH">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="94"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cen-VB-TaH">
+                                                    <rect key="frame" x="16" y="12" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Cen-VB-TaH" secondAttribute="height" multiplier="1:1" id="2Lf-ZE-gzA"/>
+                                                        <constraint firstAttribute="width" constant="50" id="w28-yb-pWP"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEB-9l-hYb">
+                                                    <rect key="frame" x="88" y="23" width="41" height="27"/>
+                                                    <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcg-1B-Wcf">
+                                                    <rect key="frame" x="358" y="27" width="29" height="19"/>
+                                                    <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="12"/>
+                                                    <color key="textColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cEB-9l-hYb" firstAttribute="leading" secondItem="Cen-VB-TaH" secondAttribute="trailing" constant="22" id="eGp-n7-Ce7"/>
+                                                <constraint firstItem="Cen-VB-TaH" firstAttribute="top" secondItem="38X-bW-vCH" secondAttribute="top" constant="12" id="feg-xg-Ewj"/>
+                                                <constraint firstItem="Cen-VB-TaH" firstAttribute="leading" secondItem="38X-bW-vCH" secondAttribute="leading" constant="16" id="mah-ek-C0u"/>
+                                                <constraint firstItem="bcg-1B-Wcf" firstAttribute="centerY" secondItem="cEB-9l-hYb" secondAttribute="centerY" id="nhW-D9-gGy"/>
+                                                <constraint firstItem="cEB-9l-hYb" firstAttribute="top" secondItem="38X-bW-vCH" secondAttribute="top" constant="23" id="vSj-1u-Zn2"/>
+                                                <constraint firstAttribute="trailing" secondItem="bcg-1B-Wcf" secondAttribute="trailing" constant="27" id="zPr-Tn-2c4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="messageLabel" destination="bcg-1B-Wcf" id="6ec-wr-phC"/>
+                                            <outlet property="nameLabel" destination="cEB-9l-hYb" id="A1R-g5-LXM"/>
+                                            <outlet property="profileImageView" destination="Cen-VB-TaH" id="DJM-5G-Ru3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PGL-NP-R5w" firstAttribute="trailing" secondItem="yrE-eP-njW" secondAttribute="trailing" id="6H7-H0-1to"/>
+                            <constraint firstItem="PGL-NP-R5w" firstAttribute="bottom" secondItem="yrE-eP-njW" secondAttribute="bottom" id="Isu-sD-QOs"/>
+                            <constraint firstItem="yrE-eP-njW" firstAttribute="leading" secondItem="PGL-NP-R5w" secondAttribute="leading" id="Zq8-As-d0R"/>
+                            <constraint firstItem="yrE-eP-njW" firstAttribute="top" secondItem="PGL-NP-R5w" secondAttribute="top" id="zWc-sd-j0N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PGL-NP-R5w"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bUs-J4-ywT">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="setting_ic" id="5cp-jx-XRU"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ChattingTableView" destination="yrE-eP-njW" id="3hk-iN-JzZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ycg-Wf-T1P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1942.0289855072465" y="1806.6964285714284"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ApG-oF-s38">
             <objects>
                 <navigationController id="bVW-9i-9uA" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KyI-0j-GmS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </navigationBar>
@@ -628,6 +734,42 @@
             </objects>
             <point key="canvasLocation" x="-226" y="675"/>
         </scene>
+        <!--친구-->
+        <scene sceneID="UoD-4R-BsV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DjZ-7a-kC0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="친구" image="person.fill" catalog="system" id="dPM-D8-pRf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k5E-TW-Lr6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MCR-pK-fKV" kind="relationship" relationship="rootViewController" id="JKt-Aq-SNx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXA-fw-63C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1172" y="1827"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mbL-Uc-C0r">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EDt-TC-B2q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WoO-2Q-HNN">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DjZ-7a-kC0" kind="relationship" relationship="viewControllers" id="1Dj-Hb-ECP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uws-wp-OLr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="1827"/>
+        </scene>
     </scenes>
     <resources>
         <image name="91884654_2523063791127592_2235726328076697600_n" width="148" height="198"/>
@@ -638,5 +780,7 @@
         <image name="92989346_2523061884461116_8856475911587889152_n" width="148" height="198"/>
         <image name="SOPT_LOGO" width="203" height="68"/>
         <image name="oursopt_bg_img" width="375" height="210"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
+        <image name="setting_ic" width="20" height="20"/>
     </resources>
 </document>
