@@ -82,7 +82,7 @@ extension ChattingViewController: UITableViewDataSource {
         guard let friendsCell = tableView.dequeueReusableCell(withIdentifier: FriendsCell.identifier, for: indexPath) as? FriendsCell else { return UITableViewCell() }
         if indexPath.section == 0 {
             friendsCell.friendsInformation(profile: friendsInformation[0].profile.getImageName(),name: friendsInformation[0].name, message: friendsInformation[0].message)
-            
+
             return friendsCell
             
         }else {
