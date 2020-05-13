@@ -22,6 +22,8 @@ class FriendsCell: UITableViewCell {
         // 프로필사진 동그랗게 만들기
         //profileImageView.layer.masksToBounds = true
         // Initialization code
+        
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -29,10 +31,11 @@ class FriendsCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    func freindsInformation(profile: String, name: String, message: String){
+    func friendsInformation(profile: String, name: String, message: String){
         profileImageView.image = UIImage(named: profile)
         nameLabel.text = name
         messageLabel.text = message
+        
     }
 
 }

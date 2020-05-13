@@ -19,19 +19,27 @@ struct FriendsInformation {
     }
 }
 enum Profile {
-    case jihyun
-    case haeun
-    case dayeon
-    case hyemi
-    case yeonju
+    case peach
+    case apple
+    case strawberry
+    case watermelon
+    case grape
+    case banana
+    case greenapple
+    case plum
+    case orange
     
     func getImageName() -> String {
         switch self {
-        case .jihyun: return "새1"
-        case .haeun: return "새2"
-        case .dayeon: return "새3"
-        case .hyemi: return "새4"
-        case .yeonju: return "새5"
+        case .peach: return "복숭아"
+        case .apple: return "사과"
+        case .strawberry: return "딸기"
+        case .watermelon: return "수박"
+        case .grape: return "포도"
+        case .banana: return "바나나"
+        case .greenapple: return "청사과"
+        case .plum: return "자두"
+        case .orange: return "오렌지"
             
         }
     }
