@@ -597,7 +597,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YC7-8o-fgt"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="홈" image="home_unselected_ic" id="NW1-4d-yEh"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="home_unselected_ic" selectedImage="home_selected_ic" id="NW1-4d-yEh"/>
                     <size key="freeformSize" width="375" height="1150"/>
                     <connections>
                         <outlet property="image" destination="IaH-FG-11F" id="y83-IP-SDP"/>
@@ -636,13 +636,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEB-9l-hYb">
-                                                    <rect key="frame" x="88" y="23" width="41" height="27"/>
+                                                    <rect key="frame" x="88" y="23" width="42" height="20"/>
                                                     <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcg-1B-Wcf">
-                                                    <rect key="frame" x="358" y="27" width="29" height="19"/>
+                                                    <rect key="frame" x="358" y="26" width="29" height="14"/>
                                                     <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="12"/>
                                                     <color key="textColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -716,7 +716,7 @@
         <scene sceneID="UoD-4R-BsV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DjZ-7a-kC0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="친구" image="friends_unselected_ic" selectedImage="person.fill" catalog="system" id="dPM-D8-pRf">
+                    <tabBarItem key="tabBarItem" title="친구" image="person" catalog="system" selectedImage="person.fill" id="dPM-D8-pRf">
                         <color key="badgeColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -762,9 +762,10 @@
         <image name="92358402_2523062734461031_2982063520952090624_n" width="148" height="198"/>
         <image name="92989346_2523061884461116_8856475911587889152_n" width="148" height="198"/>
         <image name="SOPT_LOGO" width="203" height="68"/>
-        <image name="friends_unselected_ic" width="20" height="23"/>
+        <image name="home_selected_ic" width="24" height="24"/>
         <image name="home_unselected_ic" width="24" height="24"/>
         <image name="oursopt_bg_img" width="375" height="210"/>
+        <image name="person" catalog="system" width="64" height="58"/>
         <image name="person.fill" catalog="system" width="64" height="60"/>
         <image name="setting_ic" width="20" height="20"/>
     </resources>
