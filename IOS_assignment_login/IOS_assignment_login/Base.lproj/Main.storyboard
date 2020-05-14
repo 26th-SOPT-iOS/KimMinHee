@@ -658,7 +658,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imageWidth" destination="w28-yb-pWP" id="313-g6-a2n"/>
+                                            <outlet property="imageWidth" destination="w28-yb-pWP" id="I95-Uz-wUA"/>
+                                            <outlet property="labelHeight" destination="vSj-1u-Zn2" id="3Gk-Xx-GPa"/>
                                             <outlet property="messageLabel" destination="bcg-1B-Wcf" id="6ec-wr-phC"/>
                                             <outlet property="nameLabel" destination="cEB-9l-hYb" id="A1R-g5-LXM"/>
                                             <outlet property="profileImageView" destination="Cen-VB-TaH" id="DJM-5G-Ru3"/>

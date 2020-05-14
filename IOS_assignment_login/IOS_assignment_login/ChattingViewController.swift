@@ -49,11 +49,13 @@ class ChattingViewController: UIViewController {
         let data5 = FriendsInformation(profile: .orange, name: "최오렌지", message: "오렌지 1박스 12000원 카톡주세요")
         let data6 = FriendsInformation(profile: .banana, name: "남궁바나나", message: "방금 김민희 빠삐코 먹음")
         let data7 = FriendsInformation(profile: .greenapple, name: "진청사과", message: "요즘 자주 듣는 노래 - 찐이야")
-        let data8 = FriendsInformation(profile: .plum, name: "최자두", message: "새벽 3시")
+        let data8 = FriendsInformation(profile: .plum, name: "최자두", message: "")
         let data9 = FriendsInformation(profile: .grape, name: "진포도", message: "민희야 잠이 자고싶어?-_-")
+        let data10 = FriendsInformation(profile: .potato, name: "햇감자", message: "나는야 감자튀김이 될꺼야")
+
         
-        friendsInformation = [data1,data2,data3,data4,data5,data6,data7,data8,data9]
-  
+        friendsInformation = [data1,data2,data3,data4,data5,data6,data7,data8,data9,data10]
+
     }
     private func MyTabBar() {
         
@@ -90,6 +92,7 @@ extension ChattingViewController: UITableViewDataSource {
         guard let friendsCell = tableView.dequeueReusableCell(withIdentifier: FriendsCell.identifier, for: indexPath) as? FriendsCell else { return UITableViewCell() }
         if indexPath.section == 0 {
             friendsCell.imageWidth.constant = 60
+            friendsCell.labelHeight.constant = 33
             friendsCell.nameLabel.font = UIFont(name: "AppleSDGothicNeo-Bold", size: 17)
             friendsCell.nameLabel.frame = CGRect.init(x: 20, y: 0, width: 44, height: 20)
             friendsCell.friendsInformation(profile: friendsInformation[0].profile.getImageName(),name: friendsInformation[0].name, message: friendsInformation[0].message)

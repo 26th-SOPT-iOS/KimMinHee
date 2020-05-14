@@ -16,7 +16,9 @@ class FriendsCell: UITableViewCell {
     // 친구들 이름
     @IBOutlet weak var messageLabel: UILabel!
     // 친구들 상태 메세지
+    
     @IBOutlet weak var imageWidth: NSLayoutConstraint!
+    @IBOutlet weak var labelHeight: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
         profileImageView.layer.cornerRadius = profileImageView.frame.width / 2

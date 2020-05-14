@@ -28,6 +28,7 @@ enum Profile {
     case greenapple
     case plum
     case orange
+    case potato
     
     func getImageName() -> String {
         switch self {
@@ -40,7 +41,7 @@ enum Profile {
         case .greenapple: return "청사과"
         case .plum: return "자두"
         case .orange: return "오렌지"
-            
+        case .potato: return "감자"
         }
     }
 }
