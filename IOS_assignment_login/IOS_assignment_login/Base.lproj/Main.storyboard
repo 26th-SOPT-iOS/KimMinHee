@@ -277,7 +277,7 @@
             </objects>
             <point key="canvasLocation" x="-196" y="-50"/>
         </scene>
-        <!--Scroll View Controller-->
+        <!--홈-->
         <scene sceneID="sL1-Tr-2Ot">
             <objects>
                 <viewController storyboardIdentifier="scrollViewController" id="usU-wM-IGS" customClass="ScrollViewController" customModule="IOS_assignment_login" customModuleProvider="target" sceneMemberID="viewController">
@@ -308,13 +308,13 @@
                                                 <rect key="frame" x="28" y="270" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3D3-6h-tiB">
-                                                        <rect key="frame" x="10" y="117" width="94" height="15.5"/>
+                                                        <rect key="frame" x="10" y="117" width="94" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
                                                         <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="불타는 피아노" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mg5-e3-Elk">
-                                                        <rect key="frame" x="10" y="141" width="98.5" height="21"/>
+                                                        <rect key="frame" x="10" y="134" width="99.5" height="28"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -336,13 +336,13 @@
                                                 <rect key="frame" x="199" y="270" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCM-mp-Q6D">
-                                                        <rect key="frame" x="12" y="117" width="94" height="15.5"/>
+                                                        <rect key="frame" x="12" y="117" width="94" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
                                                         <color key="textColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다음 임원진 소환" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdM-yp-Hrs">
-                                                        <rect key="frame" x="12" y="141" width="119" height="21"/>
+                                                        <rect key="frame" x="12" y="134" width="120.5" height="28"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -362,13 +362,13 @@
                                                 <rect key="frame" x="28" y="499" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아무것도 하기싫" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBT-Uh-qZo">
-                                                        <rect key="frame" x="10" y="140" width="114" height="21"/>
+                                                        <rect key="frame" x="10" y="133" width="115.5" height="28"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMP-vB-gnV">
-                                                        <rect key="frame" x="10" y="116" width="94" height="15.5"/>
+                                                        <rect key="frame" x="10" y="116" width="94" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -388,13 +388,13 @@
                                                 <rect key="frame" x="199" y="499" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6U-ik-25V">
-                                                        <rect key="frame" x="12" y="116" width="94" height="15.5"/>
+                                                        <rect key="frame" x="12" y="116" width="94" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아워솝트 화이팅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXc-Y6-Gc8">
-                                                        <rect key="frame" x="12" y="140" width="114" height="21"/>
+                                                        <rect key="frame" x="12" y="133" width="115.5" height="28"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -414,13 +414,13 @@
                                                 <rect key="frame" x="28" y="728" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b5-26-WkU">
-                                                        <rect key="frame" x="10" y="116" width="94" height="15.5"/>
+                                                        <rect key="frame" x="10" y="116" width="94" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="종무식 기다리는중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dB-CW-hAu">
-                                                        <rect key="frame" x="10" y="140" width="130" height="21"/>
+                                                        <rect key="frame" x="10" y="133" width="131" height="28"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -440,13 +440,13 @@
                                                 <rect key="frame" x="199" y="728" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ko-aJ-PnD">
-                                                        <rect key="frame" x="12" y="116" width="94" height="15.5"/>
+                                                        <rect key="frame" x="12" y="116" width="94" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이제 1차 끝났어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niC-Qk-qKc">
-                                                        <rect key="frame" x="12" y="140" width="113.5" height="21"/>
+                                                        <rect key="frame" x="12" y="133" width="115" height="28"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -466,13 +466,13 @@
                                                 <rect key="frame" x="28" y="957" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbE-UO-l3G">
-                                                        <rect key="frame" x="10" y="116" width="94" height="15.5"/>
+                                                        <rect key="frame" x="10" y="116" width="94" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘도 공지 내일도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4H-ZL-d3P">
-                                                        <rect key="frame" x="10" y="140" width="135" height="21"/>
+                                                        <rect key="frame" x="10" y="133" width="136.5" height="28"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -492,13 +492,13 @@
                                                 <rect key="frame" x="199" y="957" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eG6-0n-wru">
-                                                        <rect key="frame" x="12" y="116" width="94" height="15.5"/>
+                                                        <rect key="frame" x="12" y="116" width="94" height="20.5"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아워솝트 화이팅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="has-4A-A7u">
-                                                        <rect key="frame" x="12" y="140" width="114" height="21"/>
+                                                        <rect key="frame" x="12" y="133" width="115.5" height="28"/>
                                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -597,6 +597,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YC7-8o-fgt"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="홈" image="home_unselected_ic" id="NW1-4d-yEh"/>
                     <size key="freeformSize" width="375" height="1150"/>
                     <connections>
                         <outlet property="image" destination="IaH-FG-11F" id="y83-IP-SDP"/>
@@ -606,7 +607,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3f-9k-cKt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1368.8" y="400.29985007496254"/>
+            <point key="canvasLocation" x="1172" y="1050"/>
         </scene>
         <!--Chatting View Controller-->
         <scene sceneID="jDe-tO-c81">
@@ -657,6 +658,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="imageWidth" destination="w28-yb-pWP" id="313-g6-a2n"/>
                                             <outlet property="messageLabel" destination="bcg-1B-Wcf" id="6ec-wr-phC"/>
                                             <outlet property="nameLabel" destination="cEB-9l-hYb" id="A1R-g5-LXM"/>
                                             <outlet property="profileImageView" destination="Cen-VB-TaH" id="DJM-5G-Ru3"/>
@@ -666,6 +668,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="PGL-NP-R5w" firstAttribute="trailing" secondItem="yrE-eP-njW" secondAttribute="trailing" id="6H7-H0-1to"/>
                             <constraint firstItem="PGL-NP-R5w" firstAttribute="bottom" secondItem="yrE-eP-njW" secondAttribute="bottom" id="Isu-sD-QOs"/>
@@ -713,7 +716,9 @@
         <scene sceneID="UoD-4R-BsV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DjZ-7a-kC0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="친구" image="person.fill" catalog="system" id="dPM-D8-pRf"/>
+                    <tabBarItem key="tabBarItem" title="친구" image="friends_unselected_ic" selectedImage="person.fill" catalog="system" id="dPM-D8-pRf">
+                        <color key="badgeColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k5E-TW-Lr6">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -728,23 +733,25 @@
             </objects>
             <point key="canvasLocation" x="1172" y="1827"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom My Controller-->
         <scene sceneID="mbL-Uc-C0r">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EDt-TC-B2q" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EDt-TC-B2q" customClass="CustomMyController" customModule="IOS_assignment_login" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WoO-2Q-HNN">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                     </tabBar>
                     <connections>
+                        <segue destination="usU-wM-IGS" kind="relationship" relationship="viewControllers" id="GMt-sc-yRM"/>
                         <segue destination="DjZ-7a-kC0" kind="relationship" relationship="viewControllers" id="1Dj-Hb-ECP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uws-wp-OLr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="1827"/>
+            <point key="canvasLocation" x="19" y="1557"/>
         </scene>
     </scenes>
     <resources>
@@ -755,6 +762,8 @@
         <image name="92358402_2523062734461031_2982063520952090624_n" width="148" height="198"/>
         <image name="92989346_2523061884461116_8856475911587889152_n" width="148" height="198"/>
         <image name="SOPT_LOGO" width="203" height="68"/>
+        <image name="friends_unselected_ic" width="20" height="23"/>
+        <image name="home_unselected_ic" width="24" height="24"/>
         <image name="oursopt_bg_img" width="375" height="210"/>
         <image name="person.fill" catalog="system" width="64" height="60"/>
         <image name="setting_ic" width="20" height="20"/>

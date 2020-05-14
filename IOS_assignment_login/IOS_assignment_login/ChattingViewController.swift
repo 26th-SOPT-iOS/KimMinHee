@@ -33,12 +33,13 @@ class ChattingViewController: UIViewController {
         
         super.viewDidLoad()
 
-
         setdataInformations()
         myNavigation()
+        MyTabBar()
         ChattingTableView.dataSource = self
         ChattingTableView.delegate = self
         ChattingTableView.separatorStyle = .none //구분선 제거
+        
     }
     private func setdataInformations() {
         let data1 = FriendsInformation(profile: .peach, name: "김민희", message: "")
@@ -47,19 +48,26 @@ class ChattingViewController: UIViewController {
         let data4 = FriendsInformation(profile: .watermelon, name: "박수박", message: "근데 왜 이렇게 바쁜거야")
         let data5 = FriendsInformation(profile: .orange, name: "최오렌지", message: "오렌지 1박스 12000원 카톡주세요")
         let data6 = FriendsInformation(profile: .banana, name: "남궁바나나", message: "방금 김민희 빠삐코 먹음")
-        let data7 = FriendsInformation(profile: .greenapple, name: "건포도", message: "요즘 자주 듣는 노래 - 찐이야")
+        let data7 = FriendsInformation(profile: .greenapple, name: "진청사과", message: "요즘 자주 듣는 노래 - 찐이야")
         let data8 = FriendsInformation(profile: .plum, name: "최자두", message: "새벽 3시")
         let data9 = FriendsInformation(profile: .grape, name: "진포도", message: "민희야 잠이 자고싶어?-_-")
         
         friendsInformation = [data1,data2,data3,data4,data5,data6,data7,data8,data9]
   
     }
+    private func MyTabBar() {
+        
+        //tabBarController?.tabBar.tint
+        
+        //tabBarController?.tabBarItem.image = UIImage(named: "setting_ic")
+    }
     private func myNavigation() {
+        // 상단 아이템 black으로 변경
+        navigationController?.navigationBar.tintColor = UIColor.black
         
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = false
         //navigationBar bottom bolder line 제거
-        
         let longTitleLabel = UILabel()
         longTitleLabel.text = "친구"
         longTitleLabel.font = UIFont.boldSystemFont(ofSize: 22)
@@ -81,12 +89,15 @@ extension ChattingViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let friendsCell = tableView.dequeueReusableCell(withIdentifier: FriendsCell.identifier, for: indexPath) as? FriendsCell else { return UITableViewCell() }
         if indexPath.section == 0 {
+            friendsCell.imageWidth.constant = 60
+            friendsCell.nameLabel.font = UIFont(name: "AppleSDGothicNeo-Bold", size: 17)
+            friendsCell.nameLabel.frame = CGRect.init(x: 20, y: 0, width: 44, height: 20)
             friendsCell.friendsInformation(profile: friendsInformation[0].profile.getImageName(),name: friendsInformation[0].name, message: friendsInformation[0].message)
 
             return friendsCell
             
         }else {
-
+            friendsCell.imageWidth.constant = 50
             friendsCell.friendsInformation(profile: friendsInformation[indexPath.row+1].profile.getImageName(),name: friendsInformation[indexPath.row+1].name, message: friendsInformation[indexPath.row+1].message)
             return friendsCell }
     }
