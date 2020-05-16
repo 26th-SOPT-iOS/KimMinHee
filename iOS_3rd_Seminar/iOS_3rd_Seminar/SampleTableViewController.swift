@@ -47,6 +47,7 @@ extension SampleTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let weatherCell = tableView.dequeueReusableCell(withIdentifier: WeatherCell.identifier, for: indexPath) as? WeatherCell else {
         return UITableViewCell() }
+       
         weatherCell.setDateInformation(weatherImageName: dateInformations[indexPath.row].weather.getImageName(),
                                        date: dateInformations[indexPath.row].date,
                                        subTitle: dateInformations[indexPath.row].subTitle)
