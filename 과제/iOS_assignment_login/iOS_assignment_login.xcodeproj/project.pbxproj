@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D1CE7702474345E005950FF /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1CE76F2474345E005950FF /* SignUpService.swift */; };
 		3D5504DD246AB7F200CBC945 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5504DC246AB7F200CBC945 /* ChattingViewController.swift */; };
 		3D5504E5246AF8CD00CBC945 /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5504E4246AF8CD00CBC945 /* FriendsCell.swift */; };
 		3D5504E7246AF9A100CBC945 /* FriendsInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5504E6246AF9A100CBC945 /* FriendsInformation.swift */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		23F8804D37A4ADA9F1A475BF /* Pods-iOS_assignment_loginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_assignment_loginTests.release.xcconfig"; path = "Target Support Files/Pods-iOS_assignment_loginTests/Pods-iOS_assignment_loginTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D1CE76F2474345E005950FF /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
 		3D5504DC246AB7F200CBC945 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
 		3D5504E4246AF8CD00CBC945 /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
 		3D5504E6246AF9A100CBC945 /* FriendsInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsInformation.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			children = (
 				3DB948E1246FCF5800125C25 /* APIConstants.swift */,
 				3DB948E3246FCF6E00125C25 /* LoginService.swift */,
+				3D1CE76F2474345E005950FF /* SignUpService.swift */,
 				3DB948E7246FCF9700125C25 /* NetworkResult.swift */,
 				3DB948E5246FCF8300125C25 /* SigninData.swift */,
 				3DB948EF246FD95000125C25 /* SignupData.swift */,
@@ -505,6 +508,7 @@
 				3DB948E2246FCF5800125C25 /* APIConstants.swift in Sources */,
 				3DB948F0246FD95000125C25 /* SignupData.swift in Sources */,
 				3D5F6076244AE5AA00D9220F /* SceneDelegate.swift in Sources */,
+				3D1CE7702474345E005950FF /* SignUpService.swift in Sources */,
 				3DB948E6246FCF8300125C25 /* SigninData.swift in Sources */,
 				3D5F60A6244AEDF300D9220F /* LoginViewController.swift in Sources */,
 				3D5F60A4244AEC2900D9220F /* MainViewController.swift in Sources */,
