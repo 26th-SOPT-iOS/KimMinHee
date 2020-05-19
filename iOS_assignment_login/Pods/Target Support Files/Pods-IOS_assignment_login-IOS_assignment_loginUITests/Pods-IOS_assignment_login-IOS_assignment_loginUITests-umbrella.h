@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_IOS_assignment_login_IOS_assignment_loginUITestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_IOS_assignment_login_IOS_assignment_loginUITestsVersionString[];
+FOUNDATION_EXPORT double Pods_iOS_assignment_login_iOS_assignment_loginUITestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_iOS_assignment_login_iOS_assignment_loginUITestsVersionString[];
 

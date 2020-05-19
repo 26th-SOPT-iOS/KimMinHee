@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_IOS_assignment_login_IOS_assignment_loginUITests : NSObject
+@interface PodsDummy_Pods_iOS_assignment_login_iOS_assignment_loginUITests : NSObject
 @end
-@implementation PodsDummy_Pods_IOS_assignment_login_IOS_assignment_loginUITests
+@implementation PodsDummy_Pods_iOS_assignment_login_iOS_assignment_loginUITests
 @end

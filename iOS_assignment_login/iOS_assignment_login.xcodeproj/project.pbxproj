@@ -29,9 +29,9 @@
 		3DC8203E24658472007D8CE4 /* KoPubWorld Dotum_Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DC8203B24658467007D8CE4 /* KoPubWorld Dotum_Pro Bold.otf */; };
 		3DC8203F24658474007D8CE4 /* KoPubWorld Dotum_Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DC8203C24658468007D8CE4 /* KoPubWorld Dotum_Pro Light.otf */; };
 		3DC8204024658477007D8CE4 /* KoPubWorld Dotum_Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DC8203D2465846A007D8CE4 /* KoPubWorld Dotum_Pro Medium.otf */; };
-		3F94757DA13A1942ABB2B826 /* Pods_IOS_assignment_loginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBED01C565F34FC4A52F1381 /* Pods_IOS_assignment_loginTests.framework */; };
-		51F96AF8964BB74BFC0F22C5 /* Pods_IOS_assignment_login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB92C8EE7CF995F9E44344F /* Pods_IOS_assignment_login.framework */; };
-		B7ADF9871F6C97C93BDA7E0A /* Pods_IOS_assignment_login_IOS_assignment_loginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07106179FBD65E75E9D7FF6D /* Pods_IOS_assignment_login_IOS_assignment_loginUITests.framework */; };
+		5212473F3526CE78E002C292 /* Pods_iOS_assignment_loginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90038B8874B6C3C5D6AB818 /* Pods_iOS_assignment_loginTests.framework */; };
+		D59A832C4CF599F46AA5400C /* Pods_iOS_assignment_login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3BD01026EE98DE48A67199 /* Pods_iOS_assignment_login.framework */; };
+		E0E66FBD7618AFC88B7822EB /* Pods_iOS_assignment_login_iOS_assignment_loginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6AFCA2762B85102BD35CE60 /* Pods_iOS_assignment_login_iOS_assignment_loginUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07106179FBD65E75E9D7FF6D /* Pods_IOS_assignment_login_IOS_assignment_loginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_assignment_login_IOS_assignment_loginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F8804D37A4ADA9F1A475BF /* Pods-iOS_assignment_loginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_assignment_loginTests.release.xcconfig"; path = "Target Support Files/Pods-iOS_assignment_loginTests/Pods-iOS_assignment_loginTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D5504DC246AB7F200CBC945 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
 		3D5504E4246AF8CD00CBC945 /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
 		3D5504E6246AF9A100CBC945 /* FriendsInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsInformation.swift; sourceTree = "<group>"; };
@@ -79,14 +79,20 @@
 		3DC8203B24658467007D8CE4 /* KoPubWorld Dotum_Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPubWorld Dotum_Pro Bold.otf"; sourceTree = "<group>"; };
 		3DC8203C24658468007D8CE4 /* KoPubWorld Dotum_Pro Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPubWorld Dotum_Pro Light.otf"; sourceTree = "<group>"; };
 		3DC8203D2465846A007D8CE4 /* KoPubWorld Dotum_Pro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoPubWorld Dotum_Pro Medium.otf"; sourceTree = "<group>"; };
-		3EB92C8EE7CF995F9E44344F /* Pods_IOS_assignment_login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_assignment_login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EFE817F7F11E7F7A47099B /* Pods-IOS_assignment_login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_assignment_login.debug.xcconfig"; path = "Target Support Files/Pods-IOS_assignment_login/Pods-IOS_assignment_login.debug.xcconfig"; sourceTree = "<group>"; };
+		5AA6B8CDC8C490DF8D203824 /* Pods-iOS_assignment_loginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_assignment_loginTests.debug.xcconfig"; path = "Target Support Files/Pods-iOS_assignment_loginTests/Pods-iOS_assignment_loginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		62146616A3EA091DC8838065 /* Pods-IOS_assignment_login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_assignment_login.release.xcconfig"; path = "Target Support Files/Pods-IOS_assignment_login/Pods-IOS_assignment_login.release.xcconfig"; sourceTree = "<group>"; };
+		794D9EA17CE27A93079D1128 /* Pods-iOS_assignment_login-iOS_assignment_loginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_assignment_login-iOS_assignment_loginUITests.release.xcconfig"; path = "Target Support Files/Pods-iOS_assignment_login-iOS_assignment_loginUITests/Pods-iOS_assignment_login-iOS_assignment_loginUITests.release.xcconfig"; sourceTree = "<group>"; };
+		89C99B32FFC272EF7F05DFCF /* Pods-iOS_assignment_login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_assignment_login.debug.xcconfig"; path = "Target Support Files/Pods-iOS_assignment_login/Pods-iOS_assignment_login.debug.xcconfig"; sourceTree = "<group>"; };
+		8C3BD01026EE98DE48A67199 /* Pods_iOS_assignment_login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_assignment_login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3B198E57A2F69DB4C1EBD5 /* Pods-IOS_assignment_login-IOS_assignment_loginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_assignment_login-IOS_assignment_loginUITests.debug.xcconfig"; path = "Target Support Files/Pods-IOS_assignment_login-IOS_assignment_loginUITests/Pods-IOS_assignment_login-IOS_assignment_loginUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A11DD055FEF9CAE622F506DF /* Pods-iOS_assignment_login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_assignment_login.release.xcconfig"; path = "Target Support Files/Pods-iOS_assignment_login/Pods-iOS_assignment_login.release.xcconfig"; sourceTree = "<group>"; };
+		A6AFCA2762B85102BD35CE60 /* Pods_iOS_assignment_login_iOS_assignment_loginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_assignment_login_iOS_assignment_loginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84C3FDEAA3173C2CFB9DA68 /* Pods-IOS_assignment_login-IOS_assignment_loginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_assignment_login-IOS_assignment_loginUITests.release.xcconfig"; path = "Target Support Files/Pods-IOS_assignment_login-IOS_assignment_loginUITests/Pods-IOS_assignment_login-IOS_assignment_loginUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AC20E1BFA821B525447EFC8D /* Pods-iOS_assignment_login-iOS_assignment_loginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_assignment_login-iOS_assignment_loginUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOS_assignment_login-iOS_assignment_loginUITests/Pods-iOS_assignment_login-iOS_assignment_loginUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CEB9BA89403B4107E86A41A3 /* Pods-IOS_assignment_loginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_assignment_loginTests.debug.xcconfig"; path = "Target Support Files/Pods-IOS_assignment_loginTests/Pods-IOS_assignment_loginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D5FB2B3071B36BCD67FBE55A /* Pods-IOS_assignment_loginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_assignment_loginTests.release.xcconfig"; path = "Target Support Files/Pods-IOS_assignment_loginTests/Pods-IOS_assignment_loginTests.release.xcconfig"; sourceTree = "<group>"; };
-		EBED01C565F34FC4A52F1381 /* Pods_IOS_assignment_loginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_assignment_loginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90038B8874B6C3C5D6AB818 /* Pods_iOS_assignment_loginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_assignment_loginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51F96AF8964BB74BFC0F22C5 /* Pods_IOS_assignment_login.framework in Frameworks */,
+				D59A832C4CF599F46AA5400C /* Pods_iOS_assignment_login.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F94757DA13A1942ABB2B826 /* Pods_IOS_assignment_loginTests.framework in Frameworks */,
+				5212473F3526CE78E002C292 /* Pods_iOS_assignment_loginTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7ADF9871F6C97C93BDA7E0A /* Pods_IOS_assignment_login_IOS_assignment_loginUITests.framework in Frameworks */,
+				E0E66FBD7618AFC88B7822EB /* Pods_iOS_assignment_login_iOS_assignment_loginUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,9 +224,9 @@
 		D78363032F6DEE3E91E11D32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3EB92C8EE7CF995F9E44344F /* Pods_IOS_assignment_login.framework */,
-				07106179FBD65E75E9D7FF6D /* Pods_IOS_assignment_login_IOS_assignment_loginUITests.framework */,
-				EBED01C565F34FC4A52F1381 /* Pods_IOS_assignment_loginTests.framework */,
+				8C3BD01026EE98DE48A67199 /* Pods_iOS_assignment_login.framework */,
+				A6AFCA2762B85102BD35CE60 /* Pods_iOS_assignment_login_iOS_assignment_loginUITests.framework */,
+				D90038B8874B6C3C5D6AB818 /* Pods_iOS_assignment_loginTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -234,6 +240,12 @@
 				A84C3FDEAA3173C2CFB9DA68 /* Pods-IOS_assignment_login-IOS_assignment_loginUITests.release.xcconfig */,
 				CEB9BA89403B4107E86A41A3 /* Pods-IOS_assignment_loginTests.debug.xcconfig */,
 				D5FB2B3071B36BCD67FBE55A /* Pods-IOS_assignment_loginTests.release.xcconfig */,
+				89C99B32FFC272EF7F05DFCF /* Pods-iOS_assignment_login.debug.xcconfig */,
+				A11DD055FEF9CAE622F506DF /* Pods-iOS_assignment_login.release.xcconfig */,
+				AC20E1BFA821B525447EFC8D /* Pods-iOS_assignment_login-iOS_assignment_loginUITests.debug.xcconfig */,
+				794D9EA17CE27A93079D1128 /* Pods-iOS_assignment_login-iOS_assignment_loginUITests.release.xcconfig */,
+				5AA6B8CDC8C490DF8D203824 /* Pods-iOS_assignment_loginTests.debug.xcconfig */,
+				23F8804D37A4ADA9F1A475BF /* Pods-iOS_assignment_loginTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -379,15 +391,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IOS_assignment_login/Pods-IOS_assignment_login-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_assignment_login/Pods-iOS_assignment_login-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IOS_assignment_login/Pods-IOS_assignment_login-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_assignment_login/Pods-iOS_assignment_login-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOS_assignment_login/Pods-IOS_assignment_login-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS_assignment_login/Pods-iOS_assignment_login-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		58B620467ABC41E799D2EFD7 /* [CP] Check Pods Manifest.lock */ = {
@@ -405,7 +417,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IOS_assignment_login-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-iOS_assignment_login-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -427,7 +439,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IOS_assignment_login-IOS_assignment_loginUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-iOS_assignment_login-iOS_assignment_loginUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -449,7 +461,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IOS_assignment_loginTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-iOS_assignment_loginTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -462,15 +474,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IOS_assignment_login-IOS_assignment_loginUITests/Pods-IOS_assignment_login-IOS_assignment_loginUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_assignment_login-iOS_assignment_loginUITests/Pods-iOS_assignment_login-iOS_assignment_loginUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IOS_assignment_login-IOS_assignment_loginUITests/Pods-IOS_assignment_login-IOS_assignment_loginUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_assignment_login-iOS_assignment_loginUITests/Pods-iOS_assignment_login-iOS_assignment_loginUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOS_assignment_login-IOS_assignment_loginUITests/Pods-IOS_assignment_login-IOS_assignment_loginUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS_assignment_login-iOS_assignment_loginUITests/Pods-iOS_assignment_login-iOS_assignment_loginUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -664,7 +676,7 @@
 		};
 		3D5F609B244AE5AC00D9220F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EFE817F7F11E7F7A47099B /* Pods-IOS_assignment_login.debug.xcconfig */;
+			baseConfigurationReference = 89C99B32FFC272EF7F05DFCF /* Pods-iOS_assignment_login.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -683,7 +695,7 @@
 		};
 		3D5F609C244AE5AC00D9220F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62146616A3EA091DC8838065 /* Pods-IOS_assignment_login.release.xcconfig */;
+			baseConfigurationReference = A11DD055FEF9CAE622F506DF /* Pods-iOS_assignment_login.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -702,7 +714,7 @@
 		};
 		3D5F609E244AE5AC00D9220F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEB9BA89403B4107E86A41A3 /* Pods-IOS_assignment_loginTests.debug.xcconfig */;
+			baseConfigurationReference = 5AA6B8CDC8C490DF8D203824 /* Pods-iOS_assignment_loginTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -725,7 +737,7 @@
 		};
 		3D5F609F244AE5AC00D9220F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5FB2B3071B36BCD67FBE55A /* Pods-IOS_assignment_loginTests.release.xcconfig */;
+			baseConfigurationReference = 23F8804D37A4ADA9F1A475BF /* Pods-iOS_assignment_loginTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -748,7 +760,7 @@
 		};
 		3D5F60A1244AE5AC00D9220F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C3B198E57A2F69DB4C1EBD5 /* Pods-IOS_assignment_login-IOS_assignment_loginUITests.debug.xcconfig */;
+			baseConfigurationReference = AC20E1BFA821B525447EFC8D /* Pods-iOS_assignment_login-iOS_assignment_loginUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -769,7 +781,7 @@
 		};
 		3D5F60A2244AE5AC00D9220F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A84C3FDEAA3173C2CFB9DA68 /* Pods-IOS_assignment_login-IOS_assignment_loginUITests.release.xcconfig */;
+			baseConfigurationReference = 794D9EA17CE27A93079D1128 /* Pods-iOS_assignment_login-iOS_assignment_loginUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,5 +1,5 @@
-framework module Pods_IOS_assignment_loginTests {
-  umbrella header "Pods-IOS_assignment_loginTests-umbrella.h"
+framework module Pods_iOS_assignment_loginTests {
+  umbrella header "Pods-iOS_assignment_loginTests-umbrella.h"
 
   export *
   module * { export * }
