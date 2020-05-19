@@ -82,6 +82,18 @@ class MainViewController: UIViewController {
         self.navigationController?.pushViewController(SignPush, animated: true)
         
     }
+    var yourId: String?
+    var yourPw: String?
+    
+    func setLables() {
+        
+    guard let yourId = self.yourId else{return}
+    guard let yourPw = self.yourPw else{return}
+    
+    idTextField.text = yourId
+    pwTextField.text = yourPw
+    
+    }
     
 }
 extension UITextField {

@@ -54,19 +54,14 @@ class SignViewController: UIViewController {
                
                SignUpService.shared.signup(id: inputID, pwd: inputPWD, name: inputNAME, email: inputEMAIL, phone: inputPHONE) { networkResult in
                    switch networkResult {
-               case .success(let token):
-                   guard let token = token as? String else {return}
-                   UserDefaults.standard.set(token, forKey: "token")
-                   
-                   //self.navigationController?.popViewController(animated: bool)
-                   LoginService.shared.login(id: inputID, pwd: inputPWD) {_ in
-                           guard let tabbarController = self.storyboard?.instantiateViewController(identifier:"customTabbarController") as?
-                               UITabBarController else { return }
-                           tabbarController.modalPresentationStyle = .fullScreen
-                           
-                       self.present(tabbarController, animated: true, completion: nil)
-                       
-                       }
+                    
+               case .success:
+    
+                  self.navigationController?.popViewController(animated: true)
+                  guard let tabbarController = self.storyboard?.instantiateViewController(identifier: "customTabbarController") as? UITabBarController else {return}
+                  tabbarController.modalPresentationStyle = .fullScreen
+                  self.present(tabbarController, animated: true, completion: nil)
+       
                        
                case .requestErr(let message):
                    guard let message = message as? String else { return }

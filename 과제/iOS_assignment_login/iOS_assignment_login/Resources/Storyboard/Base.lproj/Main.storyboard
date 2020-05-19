@@ -18,26 +18,26 @@
         <!-- -->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="iOS_assignment_login" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainviewcontroller" id="BYZ-38-t0r" customClass="MainViewController" customModule="iOS_assignment_login" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CMR-50-EzR">
-                                <rect key="frame" x="41.5" y="342.5" width="331" height="49"/>
+                                <rect key="frame" x="41.5" y="410.5" width="331" height="49"/>
                                 <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KoPubWorldDotumPB" family="KoPubWorldDotum_Pro" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SOPT_LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="z2j-SR-Rtc">
-                                <rect key="frame" x="105.5" y="150" width="203" height="68"/>
+                                <rect key="frame" x="4" y="150" width="406" height="136"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="z2j-SR-Rtc" secondAttribute="height" multiplier="203:68" id="2SS-Gg-CmA"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="아이디" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sRw-Lt-Duo">
-                                <rect key="frame" x="41.5" y="276" width="331" height="48.5"/>
+                                <rect key="frame" x="41.5" y="344" width="331" height="48.5"/>
                                 <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sRw-Lt-Duo" secondAttribute="height" multiplier="299:44" id="4sL-R6-DlJ"/>
@@ -47,7 +47,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-dF-7b3">
-                                <rect key="frame" x="41.5" y="430.5" width="331" height="53"/>
+                                <rect key="frame" x="41.5" y="498.5" width="331" height="53"/>
                                 <color key="backgroundColor" red="0.027450980392156862" green="0.23137254901960785" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YYA-dF-7b3" secondAttribute="height" multiplier="300:48" id="2gQ-v5-dvR"/>
@@ -61,16 +61,16 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="obQ-9U-3mP">
-                                <rect key="frame" x="89.5" y="500.5" width="235.5" height="23"/>
+                                <rect key="frame" x="89.5" y="568.5" width="235" height="23"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 회원이 아니신가요? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3t5-aQ-xoh">
-                                        <rect key="frame" x="0.0" y="0.0" width="151.5" height="23"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="23"/>
                                         <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="15"/>
                                         <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WAX-d4-1Y2">
-                                        <rect key="frame" x="152.5" y="0.0" width="83" height="23"/>
+                                        <rect key="frame" x="152" y="0.0" width="83" height="23"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="회원 가입하기">
