@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bVW-9i-9uA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EDt-TC-B2q">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="width" secondItem="z2j-SR-Rtc" secondAttribute="height" multiplier="203:68" id="2SS-Gg-CmA"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sRw-Lt-Duo">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="아이디" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sRw-Lt-Duo">
                                 <rect key="frame" x="41.5" y="276" width="331" height="48.5"/>
                                 <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -133,7 +133,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TeA-Pf-7vk">
-                                <rect key="frame" x="41.5" y="345" width="331" height="48.5"/>
+                                <rect key="frame" x="41.5" y="474" width="331" height="49"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="KoPubWorldDotumPB" family="KoPubWorldDotum_Pro" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -142,7 +142,7 @@
                                 <rect key="frame" x="133.5" y="143" width="147" height="48.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaT-BI-FYa">
-                                <rect key="frame" x="41.5" y="503" width="331" height="53"/>
+                                <rect key="frame" x="41.5" y="637.5" width="331" height="53"/>
                                 <color key="backgroundColor" red="0.0" green="0.16524714231491089" blue="0.54645234346389771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="16"/>
                                 <state key="normal" title="가입완료">
@@ -153,7 +153,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0yg-Js-w09">
-                                <rect key="frame" x="41.5" y="409.5" width="331" height="48.5"/>
+                                <rect key="frame" x="41.5" y="345" width="331" height="48.5"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="KoPubWorldDotumPB" family="KoPubWorldDotum_Pro" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -168,9 +168,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이름" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wUN-Zb-7eE">
-                                <rect key="frame" x="41.5" y="280.5" width="331" height="48.5"/>
+                                <rect key="frame" x="41.5" y="409.5" width="331" height="48.5"/>
                                 <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KoPubWorldDotumPB" family="KoPubWorldDotum_Pro" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="아이디" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s60-Fz-IHq">
+                                <rect key="frame" x="41.5" y="280.5" width="331" height="48.5"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KoPubWorldDotumPB" family="KoPubWorldDotum_Pro" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="핸드폰번호" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CdU-OQ-FUP">
+                                <rect key="frame" x="41.5" y="539" width="331" height="48.5"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="KoPubWorldDotumPB" family="KoPubWorldDotum_Pro" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -179,25 +192,34 @@
                         <constraints>
                             <constraint firstItem="0yg-Js-w09" firstAttribute="width" secondItem="VaT-BI-FYa" secondAttribute="width" id="0GC-0Z-jul"/>
                             <constraint firstItem="wUN-Zb-7eE" firstAttribute="centerX" secondItem="fao-Kh-Q04" secondAttribute="centerX" id="0hM-lr-MS5"/>
+                            <constraint firstItem="wUN-Zb-7eE" firstAttribute="height" secondItem="TeA-Pf-7vk" secondAttribute="height" id="3md-Lq-bCp"/>
                             <constraint firstItem="TeA-Pf-7vk" firstAttribute="height" secondItem="fao-Kh-Q04" secondAttribute="height" multiplier="44/812" id="6Cv-Rp-NnM"/>
+                            <constraint firstItem="CdU-OQ-FUP" firstAttribute="height" secondItem="TeA-Pf-7vk" secondAttribute="height" id="91n-Cr-ati"/>
                             <constraint firstItem="egN-Cd-Rp4" firstAttribute="height" secondItem="fao-Kh-Q04" secondAttribute="height" multiplier="44/812" id="9Rk-Uv-UQA"/>
                             <constraint firstItem="VaT-BI-FYa" firstAttribute="height" secondItem="fao-Kh-Q04" secondAttribute="height" multiplier="48/812" id="Cvw-Hh-U9t"/>
-                            <constraint firstItem="wUN-Zb-7eE" firstAttribute="top" secondItem="vqf-jJ-Jcw" secondAttribute="bottom" constant="42" id="EIK-gs-zEF"/>
+                            <constraint firstItem="CdU-OQ-FUP" firstAttribute="width" secondItem="TeA-Pf-7vk" secondAttribute="width" id="E9h-d8-7bC"/>
                             <constraint firstItem="TeA-Pf-7vk" firstAttribute="width" secondItem="0yg-Js-w09" secondAttribute="width" id="FUJ-88-PLX"/>
-                            <constraint firstItem="TeA-Pf-7vk" firstAttribute="height" secondItem="wUN-Zb-7eE" secondAttribute="height" id="JyS-Md-orF"/>
+                            <constraint firstItem="wUN-Zb-7eE" firstAttribute="top" secondItem="0yg-Js-w09" secondAttribute="bottom" constant="16" id="Ju5-nv-Ial"/>
+                            <constraint firstItem="s60-Fz-IHq" firstAttribute="top" secondItem="vqf-jJ-Jcw" secondAttribute="bottom" constant="42" id="KSh-l9-Z1V"/>
                             <constraint firstItem="TeA-Pf-7vk" firstAttribute="centerX" secondItem="fao-Kh-Q04" secondAttribute="centerX" id="LE6-6r-sih"/>
                             <constraint firstItem="0yg-Js-w09" firstAttribute="centerX" secondItem="fao-Kh-Q04" secondAttribute="centerX" id="LLO-ti-s9o"/>
+                            <constraint firstItem="CdU-OQ-FUP" firstAttribute="centerX" secondItem="fao-Kh-Q04" secondAttribute="centerX" id="MHf-eg-UY3"/>
                             <constraint firstItem="TeA-Pf-7vk" firstAttribute="width" secondItem="wUN-Zb-7eE" secondAttribute="width" id="NAu-vj-jLO"/>
-                            <constraint firstItem="0yg-Js-w09" firstAttribute="top" secondItem="TeA-Pf-7vk" secondAttribute="bottom" constant="16" id="PSJ-6G-deq"/>
                             <constraint firstItem="egN-Cd-Rp4" firstAttribute="centerX" secondItem="fao-Kh-Q04" secondAttribute="centerX" id="SFE-PI-mAV"/>
                             <constraint firstItem="TeA-Pf-7vk" firstAttribute="width" secondItem="fao-Kh-Q04" secondAttribute="width" multiplier="300/375" id="STF-1i-Fsm"/>
                             <constraint firstItem="vqf-jJ-Jcw" firstAttribute="centerX" secondItem="fao-Kh-Q04" secondAttribute="centerX" id="WNM-GA-tlH"/>
                             <constraint firstItem="vqf-jJ-Jcw" firstAttribute="top" secondItem="egN-Cd-Rp4" secondAttribute="bottom" constant="10" id="YNw-PP-PTb"/>
                             <constraint firstItem="egN-Cd-Rp4" firstAttribute="width" secondItem="fao-Kh-Q04" secondAttribute="width" multiplier="133/375" id="ZQ1-Qk-SCh"/>
-                            <constraint firstItem="TeA-Pf-7vk" firstAttribute="top" secondItem="wUN-Zb-7eE" secondAttribute="bottom" constant="16" id="ieQ-co-gzl"/>
+                            <constraint firstItem="CdU-OQ-FUP" firstAttribute="top" secondItem="TeA-Pf-7vk" secondAttribute="bottom" constant="16" id="bsz-vV-YiP"/>
+                            <constraint firstItem="wUN-Zb-7eE" firstAttribute="centerX" secondItem="fao-Kh-Q04" secondAttribute="centerX" id="g6e-pH-f8U"/>
+                            <constraint firstItem="0yg-Js-w09" firstAttribute="top" secondItem="s60-Fz-IHq" secondAttribute="bottom" constant="16" id="gJr-BB-ls3"/>
+                            <constraint firstItem="s60-Fz-IHq" firstAttribute="height" secondItem="0yg-Js-w09" secondAttribute="height" id="i2o-UD-ydy"/>
+                            <constraint firstItem="TeA-Pf-7vk" firstAttribute="top" secondItem="wUN-Zb-7eE" secondAttribute="bottom" constant="16" id="mFJ-UD-DJ9"/>
+                            <constraint firstItem="s60-Fz-IHq" firstAttribute="centerX" secondItem="fao-Kh-Q04" secondAttribute="centerX" id="nBU-iP-Icv"/>
+                            <constraint firstItem="s60-Fz-IHq" firstAttribute="width" secondItem="0yg-Js-w09" secondAttribute="width" id="oTQ-eu-zAQ"/>
                             <constraint firstItem="egN-Cd-Rp4" firstAttribute="top" secondItem="X8s-Vu-ULl" secondAttribute="top" constant="99" id="ppw-kY-bew"/>
+                            <constraint firstItem="VaT-BI-FYa" firstAttribute="top" secondItem="CdU-OQ-FUP" secondAttribute="bottom" constant="50" id="rI3-dV-FHf"/>
                             <constraint firstItem="TeA-Pf-7vk" firstAttribute="height" secondItem="0yg-Js-w09" secondAttribute="height" id="rJ6-Ml-NkV"/>
-                            <constraint firstItem="VaT-BI-FYa" firstAttribute="top" secondItem="0yg-Js-w09" secondAttribute="bottom" constant="45" id="vbe-kW-vbr"/>
                             <constraint firstItem="VaT-BI-FYa" firstAttribute="centerX" secondItem="fao-Kh-Q04" secondAttribute="centerX" id="y9c-wr-n3s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="X8s-Vu-ULl"/>
@@ -289,10 +311,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1150"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPA-te-eH2">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="750" height="1150"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oursopt_bg_img" translatesAutoresizingMaskIntoConstraints="NO" id="IaH-FG-11F">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="750" height="210"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="210" id="irJ-Mw-4k1"/>
                                                 </constraints>
@@ -330,7 +352,7 @@
                                                 </constraints>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="92133831_2523063437794294_8539378523368849408_n" translatesAutoresizingMaskIntoConstraints="NO" id="Cmr-Q8-11r">
-                                                <rect key="frame" x="199" y="242" width="148" height="198"/>
+                                                <rect key="frame" x="199" y="242" width="523" height="396"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMw-ya-Jit">
                                                 <rect key="frame" x="199" y="270" width="148" height="170"/>
@@ -382,10 +404,10 @@
                                                 </constraints>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="92294803_2523062577794380_2058411231781322752_n" translatesAutoresizingMaskIntoConstraints="NO" id="O5X-Pm-Xd2">
-                                                <rect key="frame" x="199" y="471" width="148" height="198"/>
+                                                <rect key="frame" x="199" y="669" width="523" height="396"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJa-ug-wNw">
-                                                <rect key="frame" x="199" y="499" width="148" height="170"/>
+                                                <rect key="frame" x="574" y="697" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6U-ik-25V">
                                                         <rect key="frame" x="12" y="116" width="94" height="20.5"/>
@@ -434,10 +456,10 @@
                                                 </constraints>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="92989346_2523061884461116_8856475911587889152_n" translatesAutoresizingMaskIntoConstraints="NO" id="MIb-nC-NGD">
-                                                <rect key="frame" x="199" y="700" width="148" height="198"/>
+                                                <rect key="frame" x="199" y="1096" width="523" height="396"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O8Z-eG-5rx">
-                                                <rect key="frame" x="199" y="728" width="148" height="170"/>
+                                                <rect key="frame" x="199" y="1124" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ko-aJ-PnD">
                                                         <rect key="frame" x="12" y="116" width="94" height="20.5"/>
@@ -486,10 +508,10 @@
                                                 </constraints>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="92133831_2523063437794294_8539378523368849408_n" translatesAutoresizingMaskIntoConstraints="NO" id="xk5-cl-2pR">
-                                                <rect key="frame" x="199" y="929" width="148" height="198"/>
+                                                <rect key="frame" x="199" y="1523" width="148" height="198"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ta5-on-6Sa">
-                                                <rect key="frame" x="199" y="957" width="148" height="170"/>
+                                                <rect key="frame" x="199" y="1551" width="148" height="170"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메롱바보 아워솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eG6-0n-wru">
                                                         <rect key="frame" x="12" y="116" width="94" height="20.5"/>
