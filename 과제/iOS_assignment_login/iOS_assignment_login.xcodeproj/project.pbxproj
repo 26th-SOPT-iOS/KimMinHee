@@ -206,11 +206,11 @@
 			children = (
 				3D5F6077244AE5AA00D9220F /* ViewController.swift */,
 				3D5F60A3244AEC2900D9220F /* MainViewController.swift */,
+				3D5F60A9244B02EE00D9220F /* SignViewController.swift */,
 				3D5504DC246AB7F200CBC945 /* ChattingViewController.swift */,
 				3DA6C86D245BC3E800B91C5D /* ScrollViewController.swift */,
 				3D5F60A5244AEDF300D9220F /* LoginViewController.swift */,
 				3D70159C246DA02D000BF1AE /* CustomMyController.swift */,
-				3D5F60A9244B02EE00D9220F /* SignViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";

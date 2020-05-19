@@ -46,12 +46,53 @@ class SignViewController: UIViewController {
     
     @IBAction func SignUp(_ sender: Any) {
         //회원가입하기 버튼
-        guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "scrollViewController") as? ScrollViewController else {return}
-        /*
-        receiveViewController.yourId = idTextField.text
-        receiveViewController.yourPw = pwTextField.text
+        guard let inputID = idTextField.text else { return }
+               guard let inputPWD = pwTextField.text else { return }
+               guard let inputNAME = nameTextField.text else { return }
+               guard let inputEMAIL = emailTextField.text else { return }
+               guard let inputPHONE = phoneTextField.text else { return }
+               
+               SignUpService.shared.signup(id: inputID, pwd: inputPWD, name: inputNAME, email: inputEMAIL, phone: inputPHONE) { networkResult in
+                   switch networkResult {
+               case .success(let token):
+                   guard let token = token as? String else {return}
+                   UserDefaults.standard.set(token, forKey: "token")
+                   
+                   //self.navigationController?.popViewController(animated: bool)
+                   LoginService.shared.login(id: inputID, pwd: inputPWD) {_ in
+                           guard let tabbarController = self.storyboard?.instantiateViewController(identifier:"customTabbarController") as?
+                               UITabBarController else { return }
+                           tabbarController.modalPresentationStyle = .fullScreen
+                           
+                       self.present(tabbarController, animated: true, completion: nil)
+                       
+                       }
+                       
+               case .requestErr(let message):
+                   guard let message = message as? String else { return }
+                   let alertViewController = UIAlertController(title: "회원가입 실패", message: message, preferredStyle: .alert)
+                   let action = UIAlertAction(title: "확인", style: .cancel, handler: nil)
+                   alertViewController.addAction(action)
+                   self.present(alertViewController, animated: true, completion: nil)
+                       
+               case .pathErr: print("path")
+                       
+               case .serverErr: print("serverErr")
+                       
+               case .networkFail: print("networkFail") }
+               }
+               //회원가입하기 버튼
+               /*
+               guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "scrollViewController") as? ScrollViewController else {return}
+               /*
+               receiveViewController.yourId = idTextField.text
+               receiveViewController.yourPw = pwTextField.text
+               */
+               receiveViewController.modalPresentationStyle = .fullScreen
+               self.present(receiveViewController, animated: true, completion: nil)
+               
+               idTextField.text=""
+               pwTextField.text=""
         */
-        receiveViewController.modalPresentationStyle = .fullScreen
-        self.present(receiveViewController, animated: true, completion: nil)
     }
 }
