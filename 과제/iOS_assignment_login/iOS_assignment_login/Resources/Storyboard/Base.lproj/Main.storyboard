@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EDt-TC-B2q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bVW-9i-9uA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -227,8 +227,10 @@
                     <navigationItem key="navigationItem" id="UYs-pl-0dN"/>
                     <connections>
                         <outlet property="SignUp" destination="VaT-BI-FYa" id="8Iy-co-OAA"/>
-                        <outlet property="idTextField" destination="TeA-Pf-7vk" id="je8-IT-6Gi"/>
+                        <outlet property="emailTextField" destination="TeA-Pf-7vk" id="je8-IT-6Gi"/>
+                        <outlet property="idTextField" destination="s60-Fz-IHq" id="cWH-sf-b3V"/>
                         <outlet property="nameTextField" destination="wUN-Zb-7eE" id="pAc-Hg-29l"/>
+                        <outlet property="phoneTextField" destination="CdU-OQ-FUP" id="cZb-UY-w3d"/>
                         <outlet property="pwTextField" destination="0yg-Js-w09" id="KeE-gF-JJH"/>
                     </connections>
                 </viewController>

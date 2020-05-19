@@ -18,13 +18,17 @@ class SignViewController: UIViewController {
         //탭 바 color 바꾸기
 
         nameTextField.layer.cornerRadius = 22
-        idTextField.layer.cornerRadius = 22
+        emailTextField.layer.cornerRadius = 22
         pwTextField.layer.cornerRadius = 22
+        idTextField.layer.cornerRadius = 22
+        phoneTextField.layer.cornerRadius = 22
         SignUp.layer.cornerRadius = 24
         
-        nameTextField.addLeftPadding()
         idTextField.addLeftPadding()
+        nameTextField.addLeftPadding()
+        emailTextField.addLeftPadding()
         pwTextField.addLeftPadding()
+        phoneTextField.addLeftPadding()
         
         //self.navigationController?.isNavigationBarHidden = false
         //self.navigationItem.backBarButtonItem = UIBarButtonItem(title:" ", style:.plain, target:nil, action: nil)
@@ -32,9 +36,12 @@ class SignViewController: UIViewController {
 
     }
     
-    @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var idTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
+    
     @IBOutlet weak var SignUp: UIButton!
     
     @IBAction func SignUp(_ sender: Any) {
@@ -46,8 +53,5 @@ class SignViewController: UIViewController {
         */
         receiveViewController.modalPresentationStyle = .fullScreen
         self.present(receiveViewController, animated: true, completion: nil)
-        
-        idTextField.text=""
-        pwTextField.text=""
     }
 }
