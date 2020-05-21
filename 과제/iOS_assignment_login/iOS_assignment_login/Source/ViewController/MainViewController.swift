@@ -10,7 +10,18 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var checkBox: UIButton!
+    
+    @IBAction func autoLoginAction(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+            if sender.isSelected == true{
+                //isAutoLogin = true
+            }else{
+                //isAutoLogin = false
+            }
 
+        
+    }
     @IBAction func login(_ sender: Any) {
 
         guard let inputID = idTextField.text else { return }
