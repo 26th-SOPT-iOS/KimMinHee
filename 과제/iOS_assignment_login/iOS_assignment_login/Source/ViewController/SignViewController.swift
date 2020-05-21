@@ -56,14 +56,16 @@ class SignViewController: UIViewController {
                    switch networkResult {
                     
                case .success:
+                // 회원가입에 성공했을때
                 guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "mainviewcontroller") as? MainViewController else {return}
-                receiveViewController.yourId = inputID
-                receiveViewController.yourPw = inputPWD
+                receiveViewController.yourId = inputID //id값 넘겨줌
+                receiveViewController.yourPw = inputPWD //pwd 값 넘겨줌
                 self.navigationController?.show(receiveViewController, sender: self)
+                // 다시 로그인 페이지로 이동
                 
-                  guard let tabbarController = self.storyboard?.instantiateViewController(identifier: "customTabbarController") as? UITabBarController else {return}
-                  tabbarController.modalPresentationStyle = .fullScreen
-                  self.present(tabbarController, animated: true, completion: nil)
+                  //guard let tabbarController = self.storyboard?.instantiateViewController(identifier: "customTabbarController") as? UITabBarController else {return}
+                  //tabbarController.modalPresentationStyle = .fullScreen
+                  //self.present(tabbarController, animated: true, completion: nil)
        
                        
                case .requestErr(let message):

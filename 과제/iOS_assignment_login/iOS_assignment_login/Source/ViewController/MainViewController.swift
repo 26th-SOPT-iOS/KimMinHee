@@ -20,6 +20,7 @@ class MainViewController: UIViewController {
         case .success(let token):
             guard let token = token as? String else { return }
             UserDefaults.standard.set(token, forKey: "token")
+            print("myToken:",token)
             guard let tabbarController = self.storyboard?.instantiateViewController(identifier:"customTabbarController") as?
                 UITabBarController else { return }
             tabbarController.modalPresentationStyle = .fullScreen
@@ -55,7 +56,20 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
-        setLables()
+        self.login(setLables()) // login 버튼에 setLabels에서 받아온 값들을 넣어서 버튼이 자동으로 눌리게함
+    }
+    var yourId: String?
+    var yourPw: String?
+    
+    func setLables() {
+        
+    guard let yourId = self.yourId else{return} //id값 전달 받아오기
+    guard let yourPw = self.yourPw else{return} //pw 값 전달 받아오기
+    
+    idTextField.text = yourId
+    pwTextField.text = yourPw
+        // 받아온 값들 field에 각각 넣어줌
+    
     }
     
     
@@ -85,18 +99,7 @@ class MainViewController: UIViewController {
         self.navigationController?.pushViewController(SignPush, animated: true)
         
     }
-    var yourId: String?
-    var yourPw: String?
     
-    func setLables() {
-        
-    guard let yourId = self.yourId else{return}
-    guard let yourPw = self.yourPw else{return}
-    
-    idTextField.text = yourId
-    pwTextField.text = yourPw
-    
-    }
     
 }
 extension UITextField {

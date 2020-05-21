@@ -25,3 +25,7 @@ struct SignupData: Codable {
         message = (try? values.decode(String.self, forKey: .message)) ?? ""
     }
 }
+
+
+
+
