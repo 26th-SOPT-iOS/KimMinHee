@@ -19,6 +19,10 @@ class MainViewController: UIViewController {
         
         LoginService.shared.login(id: inputID, pwd: inputPWD) { networkResult in switch networkResult {
         case .success(let token):
+            if self.checkbox.on == true { // 자동로그인이 선택되어 있으면 id,pwd를 공유객체에 저장함
+                UserDefaults.standard.set(self.idTextField.text, forKey: "autoid")
+                UserDefaults.standard.set(self.pwTextField.text, forKey: "autopw")
+               }
             guard let token = token as? String else { return }
             UserDefaults.standard.set(token, forKey: "token")
             print("myToken:",token)
@@ -26,6 +30,7 @@ class MainViewController: UIViewController {
                 UITabBarController else { return }
             tabbarController.modalPresentationStyle = .fullScreen
         self.present(tabbarController, animated: true, completion: nil)
+            
         case .requestErr(let message):
             guard let message = message as? String else { return }
             let alertViewController = UIAlertController(title: "로그인 실패", message: message, preferredStyle: .alert)
@@ -39,6 +44,18 @@ class MainViewController: UIViewController {
     }
     override func viewDidLoad() {
         
+       // UserDefaults.standard.removeObject(forKey: "to")
+        //UserDefaults.standard.removeObject(forKey: "too")
+        //UserDefaults.standard.removeObject(forKey: "token")
+
+        if UserDefaults.standard.string(forKey: "autoid") != nil{
+            print(UserDefaults.standard.string(forKey: "autoid"))
+            guard let tabbarController = self.storyboard?.instantiateViewController(identifier:"customTabbarController") as?
+                    UITabBarController else { return }
+                tabbarController.modalPresentationStyle = .fullScreen
+            self.present(tabbarController, animated: true, completion: nil)
+            
+        }
         super.viewDidLoad()
         self.view.addSubview(checkbox)
         if (UserDefaults.standard.string(forKey: "id") != nil){
@@ -62,13 +79,6 @@ class MainViewController: UIViewController {
         idTextField.addLeftPadding()
         pwTextField.addLeftPadding()
         self.checkbox.onTintColor = UIColor.blue
-        print(TokenData.self)
-        
-        if checkbox.isSelected == true {
-            print("gdgd")
-            UserDefaults.standard.set(self.idTextField.text, forKey: "autoid")
-            UserDefaults.standard.set(self.pwTextField.text, forKey: "autopwd")
-        }
 
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -88,8 +98,6 @@ class MainViewController: UIViewController {
     
     }
 
-    
-    
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
 
