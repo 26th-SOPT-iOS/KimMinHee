@@ -17,6 +17,7 @@ Q. *싱글톤 객체* 란?
 A. 객체를 하나만 생성해서 여러 곳에서 접근해 사용하고 싶을 때 사용하는 방법으로, 한번의 객체 생성만 이뤄지기 때문에 메모리 낭비를 방지할 수 있다.
 
 <img width="435" alt="signin parameter" src="https://user-images.githubusercontent.com/51286963/82601604-c819ad80-9bea-11ea-8fb5-e25ff2299b5c.png">
+
 ```swift
 private func makeParameter(_ id: String, _ pwd: String, _ name: String, _ email: String, _ phone: String) -> Parameters { return ["id": id, "password": pwd, "name": name, "email": email, "phone": phone]
     }
@@ -73,6 +74,7 @@ override func viewWillAppear(_ animated: Bool) {
     4. networkFail : 네트워크 연결 실패 에러 
 
 <img width="248" alt="실패 alter" src="https://user-images.githubusercontent.com/51286963/82604185-dd90d680-9bee-11ea-9ee6-410c32f5d84a.png">
+
 ```swift
  case .requestErr(let message):
                 guard let message = message as? String else { return }
