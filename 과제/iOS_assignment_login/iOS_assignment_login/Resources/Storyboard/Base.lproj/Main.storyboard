@@ -314,11 +314,11 @@
             <objects>
                 <viewController storyboardIdentifier="scrollveiwcontroller" id="usU-wM-IGS" customClass="ScrollViewController" customModule="iOS_assignment_login" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eTN-Lu-YtD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1150"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CPl-of-TpV">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1150"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CPl-of-TpV">
+                                <rect key="frame" x="0.0" y="-83" width="414" height="1000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPA-te-eH2">
                                         <rect key="frame" x="0.0" y="0.0" width="750" height="1150"/>
@@ -543,11 +543,9 @@
                                                     <constraint firstItem="has-4A-A7u" firstAttribute="leading" secondItem="Ta5-on-6Sa" secondAttribute="leading" constant="12" id="lW6-OY-ofw"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kag-uM-Vvo">
-                                                <rect key="frame" x="293" y="17" width="63" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.91574807359999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kag-uM-Vvo">
+                                                <rect key="frame" x="659" y="53" width="73" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                 <state key="normal" title="로그아웃">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -580,6 +578,7 @@
                                             <constraint firstItem="O8Z-eG-5rx" firstAttribute="top" secondItem="O5X-Pm-Xd2" secondAttribute="bottom" constant="59" id="Bml-BI-DhG"/>
                                             <constraint firstItem="b92-30-z54" firstAttribute="leading" secondItem="dPA-te-eH2" secondAttribute="leading" constant="28" id="DpZ-UI-Aaf"/>
                                             <constraint firstItem="IaH-FG-11F" firstAttribute="height" secondItem="dPA-te-eH2" secondAttribute="height" multiplier="210/1150" id="F6B-Er-wZ3"/>
+                                            <constraint firstAttribute="trailing" secondItem="kag-uM-Vvo" secondAttribute="trailing" constant="18" id="FCI-KS-0RZ"/>
                                             <constraint firstItem="xSZ-fG-r3x" firstAttribute="top" secondItem="a41-JQ-wA4" secondAttribute="bottom" constant="59" id="FDO-Gl-ozz"/>
                                             <constraint firstItem="yJa-ug-wNw" firstAttribute="top" secondItem="Cmr-Q8-11r" secondAttribute="bottom" constant="59" id="FqI-B0-wQJ"/>
                                             <constraint firstAttribute="trailing" secondItem="IaH-FG-11F" secondAttribute="trailing" id="HkR-vE-Ut7"/>
@@ -615,6 +614,7 @@
                                             <constraint firstItem="Ta5-on-6Sa" firstAttribute="leading" secondItem="zg4-Ik-wPF" secondAttribute="trailing" constant="23" id="tfb-b6-Ris"/>
                                             <constraint firstItem="MIb-nC-NGD" firstAttribute="top" secondItem="O5X-Pm-Xd2" secondAttribute="bottom" constant="31" id="tjR-Bo-ngS"/>
                                             <constraint firstItem="sak-uk-zl9" firstAttribute="top" secondItem="IaH-FG-11F" secondAttribute="bottom" constant="60" id="uId-fJ-x75"/>
+                                            <constraint firstItem="kag-uM-Vvo" firstAttribute="top" secondItem="dPA-te-eH2" secondAttribute="top" constant="53" id="uix-OK-uBA"/>
                                             <constraint firstItem="O8Z-eG-5rx" firstAttribute="leading" secondItem="RNF-zH-LNK" secondAttribute="trailing" constant="23" id="vly-39-xMV"/>
                                             <constraint firstAttribute="trailing" secondItem="Cmr-Q8-11r" secondAttribute="trailing" constant="28" id="vnI-3C-3qL"/>
                                             <constraint firstItem="RNF-zH-LNK" firstAttribute="top" secondItem="a41-JQ-wA4" secondAttribute="bottom" constant="31" id="xVn-Xw-O1R"/>
@@ -642,7 +642,7 @@
                         <viewLayoutGuide key="safeArea" id="YC7-8o-fgt"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" image="home_unselected_ic" selectedImage="home_selected_ic" id="NW1-4d-yEh"/>
-                    <size key="freeformSize" width="375" height="1150"/>
+                    <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="image" destination="IaH-FG-11F" id="y83-IP-SDP"/>
                         <outlet property="imageHeight" destination="F6B-Er-wZ3" id="rq2-gQ-YTX"/>
@@ -651,7 +651,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3f-9k-cKt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1172" y="1050"/>
+            <point key="canvasLocation" x="1171.7391304347827" y="1050"/>
         </scene>
         <!--Chatting View Controller-->
         <scene sceneID="jDe-tO-c81">

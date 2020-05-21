@@ -62,12 +62,7 @@ class SignViewController: UIViewController {
                 receiveViewController.yourPw = inputPWD //pwd 값 넘겨줌
                 self.navigationController?.show(receiveViewController, sender: self)
                 // 다시 로그인 페이지로 이동
-                
-                  //guard let tabbarController = self.storyboard?.instantiateViewController(identifier: "customTabbarController") as? UITabBarController else {return}
-                  //tabbarController.modalPresentationStyle = .fullScreen
-                  //self.present(tabbarController, animated: true, completion: nil)
-       
-                       
+  
                case .requestErr(let message):
                    guard let message = message as? String else { return }
                    let alertViewController = UIAlertController(title: "회원가입 실패", message: message, preferredStyle: .alert)

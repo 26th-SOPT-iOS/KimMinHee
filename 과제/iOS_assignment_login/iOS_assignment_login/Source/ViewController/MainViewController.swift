@@ -19,8 +19,6 @@ class MainViewController: UIViewController {
         
         LoginService.shared.login(id: inputID, pwd: inputPWD) { networkResult in switch networkResult {
         case .success(let token):
-            self.idTextField.text=""
-            self.pwTextField.text=""
             if self.checkbox.on == true { // 자동로그인이 선택되어 있으면 id,pwd를 공유객체에 저장함
                 UserDefaults.standard.set(self.idTextField.text, forKey: "autoid")
                 UserDefaults.standard.set(self.pwTextField.text, forKey: "autopw")
@@ -98,8 +96,7 @@ class MainViewController: UIViewController {
  */
         receiveViewController.modalPresentationStyle = .fullScreen
         self.present(receiveViewController, animated: true, completion: nil)
-        idTextField.text=""
-        pwTextField.text=""
+        
     }
     
     @IBOutlet weak var SignText: UILabel!
@@ -109,6 +106,8 @@ class MainViewController: UIViewController {
         guard let SignPush = self.storyboard?.instantiateViewController(identifier: "signViewController") as? SignViewController else {return}
         
         self.navigationController?.pushViewController(SignPush, animated: true)
+        //SignPush.modalPresentationStyle = .fullScreen
+        //self.present(SignPush, animated: true, completion: nil)
         
     }
     
