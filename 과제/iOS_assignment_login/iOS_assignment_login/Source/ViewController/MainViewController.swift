@@ -54,6 +54,9 @@ class MainViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        setLables()
+    }
     
     
     @IBOutlet weak var idTextField: UITextField!

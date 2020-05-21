@@ -56,8 +56,11 @@ class SignViewController: UIViewController {
                    switch networkResult {
                     
                case .success:
-    
-                  self.navigationController?.popViewController(animated: true)
+                guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "mainviewcontroller") as? MainViewController else {return}
+                receiveViewController.yourId = inputID
+                receiveViewController.yourPw = inputPWD
+                self.navigationController?.show(receiveViewController, sender: self)
+                
                   guard let tabbarController = self.storyboard?.instantiateViewController(identifier: "customTabbarController") as? UITabBarController else {return}
                   tabbarController.modalPresentationStyle = .fullScreen
                   self.present(tabbarController, animated: true, completion: nil)
