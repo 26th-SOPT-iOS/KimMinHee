@@ -14,7 +14,7 @@ JSONDecoder를 사용할 때 error 검출을 위해 try를 사용한다.
 
 * 회원가입 서버 통신 구현
 Q. *싱글톤 객체* 란?
-A. 객체를 하나만 생성해서 여러 곳에서 접근해 사용하고 싶을 때 사용하는 방법으로, 한번의 객체 생성만 이뤄지기 때문에 메모리 낭비를 방지할 수 있다.
+A. 객체를 하나만 생성해서 여러 곳에서 접근해 사용하고 싶을 때 사용하는 방법으로, 한번의 객체 생성만 이뤄지기 때문에 메모리 낭비를 방지할 수 있다
 
 <img width="435" alt="signin parameter" src="https://user-images.githubusercontent.com/51286963/82601604-c819ad80-9bea-11ea-8fb5-e25ff2299b5c.png">
 
@@ -26,14 +26,14 @@ private func makeParameter(_ id: String, _ pwd: String, _ name: String, _ email:
 <br>
 > #### 회원가입 후 자동 로그인
 
-- 회원가입 시 요구하는 정보를 모두 넣어준 후 회원가입 button을 누르면 login 페이지로 돌아감과 동시에 id와 pw가 채워진 채 자동 로그인이 되어야한다.
+- 회원가입 시 요구하는 정보를 모두 넣어준 후 회원가입 button을 누르면 login 페이지로 돌아감과 동시에 id와 pw가 채워진 채 자동 로그인이 되어야한다
 
 ```swift
 SignUpService.shared.signup(id: inputID, pwd: inputPWD, name: inputNAME, email: inputEMAIL, phone: inputPHONE) { networkResult in
             switch networkResult {
     }
 ```
-앞에서 정의해 둔 싱글톤 객체를 통해 데이터 통신을 진행함
+앞에서 정의해 둔 싱글톤 객체를 통해 데이터 통신을 진행했다
 
 - 회원가입 성공시
 
@@ -52,7 +52,7 @@ override func viewWillAppear(_ animated: Bool) {
         self.login(setLables())
         }
 ```
-로그인 view 에서는** viewWillAppear** 즉, view가 안보였다가 다시 보이게 되었을 때 작동하는 함수를 이용해 login 버튼에 받아온 값들을 넣어서 버튼을 클릭한 효과를 줌
+로그인 view 에서는** viewWillAppear** 즉, view가 안보였다가 다시 보이게 되었을 때 작동하는 함수를 이용해 login 버튼에 받아온 값들을 넣어서 버튼을 클릭한 효과를 줬다
 
 ```swift
         case .success(let token):
@@ -63,7 +63,7 @@ override func viewWillAppear(_ animated: Bool) {
             tabbarController.modalPresentationStyle = .fullScreen
         self.present(tabbarController, animated: true, completion: nil)
 ```
-로그인 요청을 보내 token을 이용하여 자동 로그인 기능을 구현함.
+로그인 요청을 보내 token을 이용하여 자동 로그인 기능을 구현하였다
 
 - 회원가입 실패시
 
@@ -83,4 +83,4 @@ override func viewWillAppear(_ animated: Bool) {
                 alertViewController.addAction(action)
                 self.present(alertViewController, animated: true, completion: nil)
 ```
-이 중 회원가입에서의 요청에러는 이미 존재하는 id를 사용했을 때 에러가 나기 때문에 message와 함께 alter을 띄어준다.
+이 중 회원가입에서의 요청에러는 이미 존재하는 id를 사용했을 때 에러가 나기 때문에 message와 함께 alter을 띄어준다
