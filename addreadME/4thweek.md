@@ -12,8 +12,8 @@ message = (try? values.decode(String.self, forKey: .message)) ?? ""
 JSONDecoder를 사용할 때 error 검출을 위해 try를 사용한다.
 만약 값이 있다면 **try? **뒤의 값을 반환하고 만약 값이 없다면 **??** 뒤의 값을 반환한다
 
-* 회원가입 서버 통신 구현
-Q. *싱글톤 객체* 란?
+* 회원가입 서버 통신 구현<br>
+Q. *싱글톤 객체* 란?<br>
 A. 객체를 하나만 생성해서 여러 곳에서 접근해 사용하고 싶을 때 사용하는 방법으로, 한번의 객체 생성만 이뤄지기 때문에 메모리 낭비를 방지할 수 있다
 
 <img width="435" alt="signin parameter" src="https://user-images.githubusercontent.com/51286963/82601604-c819ad80-9bea-11ea-8fb5-e25ff2299b5c.png">
