@@ -9,17 +9,17 @@
 import UIKit
 
 class ScrollViewController: UIViewController {
-
+    var window: UIWindow?
     @IBAction func Logout(_ sender: UIButton) {
+        guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "mainviewcontroller") as? MainViewController else {return}
+        
         // 객체 변수에 저장해 둔 id와 pw를 지움
         UserDefaults.standard.removeObject(forKey: "autoid")
         UserDefaults.standard.removeObject(forKey: "autopw")
         
-        let alertViewController = UIAlertController(title: "로그아웃", message: "자동로그인 해제", preferredStyle: .alert)
-        self.present(alertViewController, animated: true, completion: nil)
-        let action = UIAlertAction(title: "확인", style: .cancel, handler: nil)
-        alertViewController.addAction(action)
-
+        receiveViewController.modalPresentationStyle = .fullScreen
+        self.present(receiveViewController, animated: true, completion: nil)
+        
        
     }
     override func viewDidLoad() {

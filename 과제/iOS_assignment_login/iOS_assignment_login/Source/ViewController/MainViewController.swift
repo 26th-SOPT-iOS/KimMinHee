@@ -19,6 +19,8 @@ class MainViewController: UIViewController {
         
         LoginService.shared.login(id: inputID, pwd: inputPWD) { networkResult in switch networkResult {
         case .success(let token):
+            self.idTextField.text=""
+            self.pwTextField.text=""
             if self.checkbox.on == true { // 자동로그인이 선택되어 있으면 id,pwd를 공유객체에 저장함
                 UserDefaults.standard.set(self.idTextField.text, forKey: "autoid")
                 UserDefaults.standard.set(self.pwTextField.text, forKey: "autopw")
@@ -65,6 +67,9 @@ class MainViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         self.login(setLables()) // login 버튼에 setLabels에서 받아온 값들을 넣어서 버튼이 자동으로 눌리게함
+        if checkbox.on { // 로그아웃 했을 때 자동로그인 체크 풀어주기
+            checkbox.on = false
+        }
     }
     var yourId: String?
     var yourPw: String?

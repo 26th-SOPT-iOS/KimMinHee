@@ -15,8 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        //UserDefaults.standard.removeObject(forKey: "autoid")
-        //UserDefaults.standard.removeObject(forKey: "autopw")
         return true
     }
 
