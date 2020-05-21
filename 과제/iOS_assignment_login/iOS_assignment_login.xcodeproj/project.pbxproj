@@ -21,6 +21,7 @@
 		3D5F60A6244AEDF300D9220F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F60A5244AEDF300D9220F /* LoginViewController.swift */; };
 		3D5F60AA244B02EE00D9220F /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F60A9244B02EE00D9220F /* SignViewController.swift */; };
 		3D70159D246DA02D000BF1AE /* CustomMyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D70159C246DA02D000BF1AE /* CustomMyController.swift */; };
+		3D9EA5FA24767FAF0030364B /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 3D9EA5F924767FAE0030364B /* Classes */; };
 		3DA6C86E245BC3E800B91C5D /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6C86D245BC3E800B91C5D /* ScrollViewController.swift */; };
 		3DB948E2246FCF5800125C25 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB948E1246FCF5800125C25 /* APIConstants.swift */; };
 		3DB948E4246FCF6E00125C25 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB948E3246FCF6E00125C25 /* LoginService.swift */; };
@@ -72,6 +73,7 @@
 		3D5F60A5244AEDF300D9220F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3D5F60A9244B02EE00D9220F /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		3D70159C246DA02D000BF1AE /* CustomMyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMyController.swift; sourceTree = "<group>"; };
+		3D9EA5F924767FAE0030364B /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = "<group>"; };
 		3DA6C86D245BC3E800B91C5D /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		3DB948E1246FCF5800125C25 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		3DB948E3246FCF6E00125C25 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		3DB948EB246FD15700125C25 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				3D9EA5F924767FAE0030364B /* Classes */,
 				3DB948E1246FCF5800125C25 /* APIConstants.swift */,
 				3DB948E3246FCF6E00125C25 /* LoginService.swift */,
 				3D1CE76F2474345E005950FF /* SignUpService.swift */,
@@ -364,6 +367,7 @@
 			files = (
 				3D5F6080244AE5AB00D9220F /* LaunchScreen.storyboard in Resources */,
 				3D5F607D244AE5AB00D9220F /* Assets.xcassets in Resources */,
+				3D9EA5FA24767FAF0030364B /* Classes in Resources */,
 				3D5F607B244AE5AA00D9220F /* Main.storyboard in Resources */,
 				3DC8203F24658474007D8CE4 /* KoPubWorld Dotum_Pro Light.otf in Resources */,
 				3DC8203E24658472007D8CE4 /* KoPubWorld Dotum_Pro Bold.otf in Resources */,

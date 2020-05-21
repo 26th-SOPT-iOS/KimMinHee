@@ -7,21 +7,11 @@
 //
 
 import UIKit
+import BEMCheckBox
 
 class MainViewController: UIViewController {
+    let checkbox = BEMCheckBox.init(frame: CGRect.init(x: CGFloat(48), y: CGFloat(395), width: CGFloat(15), height: CGFloat(15)))
     
-    @IBOutlet weak var checkBox: UIButton!
-    
-    @IBAction func autoLoginAction(_ sender: UIButton) {
-        sender.isSelected = !sender.isSelected
-            if sender.isSelected == true{
-                //isAutoLogin = true
-            }else{
-                //isAutoLogin = false
-            }
-
-        
-    }
     @IBAction func login(_ sender: Any) {
 
         guard let inputID = idTextField.text else { return }
@@ -50,6 +40,14 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        self.view.addSubview(checkbox)
+        if (UserDefaults.standard.string(forKey: "id") != nil){
+        guard let tabbarController = self.storyboard?.instantiateViewController(identifier:"customTabbarController") as?
+                UITabBarController else { return }
+            tabbarController.modalPresentationStyle = .fullScreen
+        self.present(tabbarController, animated: true, completion: nil)
+          }
+        
         //navigationController?.isNavigationBarHidden = true
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         
@@ -63,8 +61,15 @@ class MainViewController: UIViewController {
 
         idTextField.addLeftPadding()
         pwTextField.addLeftPadding()
+        self.checkbox.onTintColor = UIColor.blue
+        print(TokenData.self)
+        
+        if checkbox.isSelected == true {
+            print("gdgd")
+            UserDefaults.standard.set(self.idTextField.text, forKey: "autoid")
+            UserDefaults.standard.set(self.pwTextField.text, forKey: "autopwd")
+        }
 
-        // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         self.login(setLables()) // login 버튼에 setLabels에서 받아온 값들을 넣어서 버튼이 자동으로 눌리게함
@@ -82,6 +87,7 @@ class MainViewController: UIViewController {
         // 받아온 값들 field에 각각 넣어줌
     
     }
+
     
     
     @IBOutlet weak var idTextField: UITextField!

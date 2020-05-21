@@ -47,7 +47,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-dF-7b3">
-                                <rect key="frame" x="41.5" y="446.5" width="331" height="53"/>
+                                <rect key="frame" x="41.5" y="430.5" width="331" height="53"/>
                                 <color key="backgroundColor" red="0.027450980392156862" green="0.23137254901960785" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YYA-dF-7b3" secondAttribute="height" multiplier="300:48" id="2gQ-v5-dvR"/>
@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="obQ-9U-3mP">
-                                <rect key="frame" x="89.5" y="516.5" width="235.5" height="23"/>
+                                <rect key="frame" x="89.5" y="500.5" width="235.5" height="23"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 회원이 아니신가요? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3t5-aQ-xoh">
                                         <rect key="frame" x="0.0" y="0.0" width="151.5" height="23"/>
@@ -92,28 +92,19 @@
                                     <constraint firstAttribute="height" constant="23" id="hEC-ZW-Jln"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpU-lB-0bq">
-                                <rect key="frame" x="41.5" y="401.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="autoLoginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aW1-ll-zJP"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="YYA-dF-7b3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5mT-Ut-2TH"/>
                             <constraint firstItem="z2j-SR-Rtc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="150" id="8XT-4z-mP7"/>
                             <constraint firstItem="obQ-9U-3mP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aku-mr-pRf"/>
-                            <constraint firstItem="YYA-dF-7b3" firstAttribute="top" secondItem="XpU-lB-0bq" secondAttribute="bottom" constant="15" id="EiM-8K-Wt6"/>
                             <constraint firstItem="CMR-50-EzR" firstAttribute="top" secondItem="sRw-Lt-Duo" secondAttribute="bottom" constant="18" id="FeT-To-YMv"/>
                             <constraint firstItem="obQ-9U-3mP" firstAttribute="top" secondItem="YYA-dF-7b3" secondAttribute="bottom" constant="17" id="Jff-Sv-UaO"/>
-                            <constraint firstItem="XpU-lB-0bq" firstAttribute="leading" secondItem="CMR-50-EzR" secondAttribute="leading" id="MWe-Aw-PUL"/>
                             <constraint firstItem="sRw-Lt-Duo" firstAttribute="top" secondItem="z2j-SR-Rtc" secondAttribute="bottom" constant="58" id="TZB-T2-7QX"/>
                             <constraint firstItem="sRw-Lt-Duo" firstAttribute="width" secondItem="CMR-50-EzR" secondAttribute="width" id="XvE-7k-DGb"/>
                             <constraint firstItem="sRw-Lt-Duo" firstAttribute="width" secondItem="YYA-dF-7b3" secondAttribute="width" id="Zae-CN-Ati"/>
                             <constraint firstItem="sRw-Lt-Duo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dx3-WP-Laa"/>
-                            <constraint firstItem="XpU-lB-0bq" firstAttribute="top" secondItem="CMR-50-EzR" secondAttribute="bottom" constant="10" id="o7d-zd-scP"/>
+                            <constraint firstItem="YYA-dF-7b3" firstAttribute="top" secondItem="CMR-50-EzR" secondAttribute="bottom" constant="39" id="erX-kl-0eX"/>
                             <constraint firstItem="sRw-Lt-Duo" firstAttribute="height" secondItem="CMR-50-EzR" secondAttribute="height" id="r78-PV-W8k"/>
                             <constraint firstItem="sRw-Lt-Duo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="299/375" constant="1" id="vWg-NE-pIr"/>
                             <constraint firstItem="z2j-SR-Rtc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xtS-y2-gCc"/>
@@ -124,7 +115,6 @@
                     <navigationItem key="navigationItem" title=" " id="82H-AO-foz"/>
                     <connections>
                         <outlet property="SignText" destination="3t5-aQ-xoh" id="SP3-7m-785"/>
-                        <outlet property="checkBox" destination="XpU-lB-0bq" id="OgK-G7-yxY"/>
                         <outlet property="idTextField" destination="sRw-Lt-Duo" id="Pd4-wE-gcA"/>
                         <outlet property="loginButton" destination="YYA-dF-7b3" id="3l2-z3-S36"/>
                         <outlet property="pwTextField" destination="CMR-50-EzR" id="Cdg-In-Cye"/>
