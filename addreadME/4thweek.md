@@ -45,14 +45,15 @@ case .success:
         self.navigationController?.show(receiveViewController, sender: self)
     }
 ```
-[1주차_값 전달하기](./addreadME/1stweek.md)에서 배웠던 것을 이용해 id,pw 값을 넘겨 준 후 다시 로그인 view로 이동하고
+[1주차_값 전달하기](./1stweek.md)에서 배웠던 것을 이용해 id,pw 값을 넘겨 준 후 다시 로그인 view로 이동하고
 
 ```swift
 override func viewWillAppear(_ animated: Bool) {
         self.login(setLables())
         }
 ```
-로그인 view 에서는** viewWillAppear** 즉, view가 안보였다가 다시 보이게 되었을 때 작동하는 함수를 이용해 login 버튼에 받아온 값들을 넣어서 버튼을 클릭한 효과를 줬다
+로그인 view 에서는 **viewWillAppear** 즉, view가 안보였다가 다시 보이게 되었을 때 작동하는 함수를 이용해<br>
+login 버튼에 받아온 id와 pw를 넣어서 버튼을 클릭한 효과를 줬다
 
 ```swift
         case .success(let token):
@@ -68,6 +69,7 @@ override func viewWillAppear(_ animated: Bool) {
 - 회원가입 실패시
 
 회원가입이 실패하는 경우에는 4가지 case가 존재한다
+
     1. requestErr : 요청에러
     2. pathErr : 경로에러
     3. serverErr : 서버 내부 에러
@@ -83,4 +85,4 @@ override func viewWillAppear(_ animated: Bool) {
                 alertViewController.addAction(action)
                 self.present(alertViewController, animated: true, completion: nil)
 ```
-이 중 회원가입에서의 요청에러는 이미 존재하는 id를 사용했을 때 에러가 나기 때문에 message와 함께 alter을 띄어준다
+이 중 회원가입에서의 요청 error는 이미 존재하는 id를 사용했을 때 error가 발생하기 때문에 message와 함께 alter을 띄어준다
