@@ -58,12 +58,6 @@ class MainViewController: UIViewController {
         }
         super.viewDidLoad()
         self.view.addSubview(checkbox)
-        if (UserDefaults.standard.string(forKey: "id") != nil){
-        guard let tabbarController = self.storyboard?.instantiateViewController(identifier:"customTabbarController") as?
-                UITabBarController else { return }
-            tabbarController.modalPresentationStyle = .fullScreen
-        self.present(tabbarController, animated: true, completion: nil)
-          }
         
         //navigationController?.isNavigationBarHidden = true
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)

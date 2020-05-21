@@ -47,7 +47,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-dF-7b3">
-                                <rect key="frame" x="41.5" y="430.5" width="331" height="53"/>
+                                <rect key="frame" x="41.5" y="427" width="331" height="53"/>
                                 <color key="backgroundColor" red="0.027450980392156862" green="0.23137254901960785" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="YYA-dF-7b3" secondAttribute="height" multiplier="300:48" id="2gQ-v5-dvR"/>
@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="obQ-9U-3mP">
-                                <rect key="frame" x="89.5" y="500.5" width="235.5" height="23"/>
+                                <rect key="frame" x="89.5" y="497" width="235.5" height="23"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 회원이 아니신가요? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3t5-aQ-xoh">
                                         <rect key="frame" x="0.0" y="0.0" width="151.5" height="23"/>
@@ -92,19 +92,27 @@
                                     <constraint firstAttribute="height" constant="23" id="hEC-ZW-Jln"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자동로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNA-Tg-qPM">
+                                <rect key="frame" x="78" y="401.5" width="57" height="20.5"/>
+                                <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="13"/>
+                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="YYA-dF-7b3" firstAttribute="top" secondItem="TNA-Tg-qPM" secondAttribute="bottom" constant="5" id="0ey-sq-hRq"/>
                             <constraint firstItem="YYA-dF-7b3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5mT-Ut-2TH"/>
                             <constraint firstItem="z2j-SR-Rtc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="150" id="8XT-4z-mP7"/>
                             <constraint firstItem="obQ-9U-3mP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aku-mr-pRf"/>
                             <constraint firstItem="CMR-50-EzR" firstAttribute="top" secondItem="sRw-Lt-Duo" secondAttribute="bottom" constant="18" id="FeT-To-YMv"/>
                             <constraint firstItem="obQ-9U-3mP" firstAttribute="top" secondItem="YYA-dF-7b3" secondAttribute="bottom" constant="17" id="Jff-Sv-UaO"/>
                             <constraint firstItem="sRw-Lt-Duo" firstAttribute="top" secondItem="z2j-SR-Rtc" secondAttribute="bottom" constant="58" id="TZB-T2-7QX"/>
+                            <constraint firstItem="TNA-Tg-qPM" firstAttribute="top" secondItem="CMR-50-EzR" secondAttribute="bottom" constant="10" id="ThG-ak-Phw"/>
+                            <constraint firstItem="TNA-Tg-qPM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="Vcg-KJ-L44"/>
                             <constraint firstItem="sRw-Lt-Duo" firstAttribute="width" secondItem="CMR-50-EzR" secondAttribute="width" id="XvE-7k-DGb"/>
                             <constraint firstItem="sRw-Lt-Duo" firstAttribute="width" secondItem="YYA-dF-7b3" secondAttribute="width" id="Zae-CN-Ati"/>
                             <constraint firstItem="sRw-Lt-Duo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dx3-WP-Laa"/>
-                            <constraint firstItem="YYA-dF-7b3" firstAttribute="top" secondItem="CMR-50-EzR" secondAttribute="bottom" constant="39" id="erX-kl-0eX"/>
                             <constraint firstItem="sRw-Lt-Duo" firstAttribute="height" secondItem="CMR-50-EzR" secondAttribute="height" id="r78-PV-W8k"/>
                             <constraint firstItem="sRw-Lt-Duo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="299/375" constant="1" id="vWg-NE-pIr"/>
                             <constraint firstItem="z2j-SR-Rtc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xtS-y2-gCc"/>
@@ -535,6 +543,18 @@
                                                     <constraint firstItem="has-4A-A7u" firstAttribute="leading" secondItem="Ta5-on-6Sa" secondAttribute="leading" constant="12" id="lW6-OY-ofw"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kag-uM-Vvo">
+                                                <rect key="frame" x="293" y="17" width="63" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.91574807359999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="로그아웃">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Logout:" destination="usU-wM-IGS" eventType="touchUpInside" id="yqd-Sk-8eM"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
