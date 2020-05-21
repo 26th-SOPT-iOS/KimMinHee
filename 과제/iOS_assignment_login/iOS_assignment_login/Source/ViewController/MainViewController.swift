@@ -44,18 +44,6 @@ class MainViewController: UIViewController {
     }
     override func viewDidLoad() {
         
-       // UserDefaults.standard.removeObject(forKey: "to")
-        //UserDefaults.standard.removeObject(forKey: "too")
-        //UserDefaults.standard.removeObject(forKey: "token")
-
-        if UserDefaults.standard.string(forKey: "autoid") != nil{
-            print(UserDefaults.standard.string(forKey: "autoid"))
-            guard let tabbarController = self.storyboard?.instantiateViewController(identifier:"customTabbarController") as?
-                    UITabBarController else { return }
-                tabbarController.modalPresentationStyle = .fullScreen
-            self.present(tabbarController, animated: true, completion: nil)
-            
-        }
         super.viewDidLoad()
         self.view.addSubview(checkbox)
         
