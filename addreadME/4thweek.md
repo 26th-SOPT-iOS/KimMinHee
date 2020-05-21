@@ -1,39 +1,84 @@
-## 🧸 2주차 과제 : 로그인 화면 레이아웃 & 스크롤뷰 🧸
+## 🧸 Network 통신 - 회원가입 API 요청하기 🧸
 
-#### 레이아웃(zeplin 이용)
+> #### API
 
-* text Padding
+* 회원가입 JSON Data
 
-<img width="246" alt="스크린샷 2020-05-08 오후 11 48 02" src="https://user-images.githubusercontent.com/51286963/81417723-91717b00-9186-11ea-9be2-a64224972738.png">
+```swift
+status = (try? values.decode(Int.self, forKey: .status)) ?? -1
+success = (try? values.decode(Bool.self, forKey: .success)) ?? false
+message = (try? values.decode(String.self, forKey: .message)) ?? ""
+```
+JSONDecoder를 사용할 때 error 검출을 위해 try를 사용한다.
+만약 값이 있다면 **try? **뒤의 값을 반환하고 만약 값이 없다면 **??** 뒤의 값을 반환한다
 
-```python
-extension UITextField {
-    func addLeftPadding() {
-      let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 17, height: self.frame.height))
-      self.leftView = paddingView
-      self.leftViewMode = ViewMode.always
+* 회원가입 서버 통신 구현
+Q. *싱글톤 객체* 란?
+A. 객체를 하나만 생성해서 여러 곳에서 접근해 사용하고 싶을 때 사용하는 방법으로, 한번의 객체 생성만 이뤄지기 때문에 메모리 낭비를 방지할 수 있다.
+
+<img width="435" alt="signin parameter" src="https://user-images.githubusercontent.com/51286963/82601604-c819ad80-9bea-11ea-8fb5-e25ff2299b5c.png">
+```swift
+private func makeParameter(_ id: String, _ pwd: String, _ name: String, _ email: String, _ phone: String) -> Parameters { return ["id": id, "password": pwd, "name": name, "email": email, "phone": phone]
     }
-}
 ```
-TextField에서 내용 작성시 간격을 주기 위해 만든 함수로,<br>
-다른 Controller의 swift 파일에서도 이 함수를 가져다 사용할 수 있다
+로그인 요청과 달리 회원가입의 RequestBody에는 5개의 Parameter가 들어가는 것을 postman 요청을 통해 확인 한 후 5개의 값을 넣어주었다
+<br>
+> #### 회원가입 후 자동 로그인
 
+- 회원가입 시 요구하는 정보를 모두 넣어준 후 회원가입 button을 누르면 login 페이지로 돌아감과 동시에 id와 pw가 채워진 채 자동 로그인이 되어야한다.
 
-* Navigation Bar
-
-```python
-	self.navigationController?.navigationBar.shadowImage = UIImage()
-    self.navigationController?.navigationBar.isTranslucent = true
+```swift
+SignUpService.shared.signup(id: inputID, pwd: inputPWD, name: inputNAME, email: inputEMAIL, phone: inputPHONE) { networkResult in
+            switch networkResult {
+    }
 ```
-Navigation Bar를 투명하게 설정해서 보이지 않게 만들기 <br>
-투명 불투명이 아닌 특정 색을 지정해 줄 수도 있음
+앞에서 정의해 둔 싱글톤 객체를 통해 데이터 통신을 진행함
 
-<img width="457" alt="스크린샷 2020-05-08 오후 11 52 27" src="https://user-images.githubusercontent.com/51286963/81418111-21afc000-9187-11ea-8374-19e02d0f521e.png">
+- 회원가입 성공시
 
-```python
-	self.navigationController?.navigationBar.topItem?.title = ""
-    self.navigationController?.navigationBar.tintColor = UIColor(red: 7/255, green: 59/255, blue: 163/255, alpha: 1.0)
+```swift
+case .success:
+    guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "mainviewcontroller") as? MainViewController else { return }
+        receiveViewController.yourId = inputID
+        receiveViewController.yourPw = inputPWD
+        self.navigationController?.show(receiveViewController, sender: self)
+    }
 ```
-Navigation Bar의 title이 기본으로 "Back"이라고 되어있지만 공백으로 변경,<br>
-그리고 <의 컬러도 .tintColor로 원하는 색으로 변경가능
+[1주차_값 전달하기](./addreadME/1stweek.md)에서 배웠던 것을 이용해 id,pw 값을 넘겨 준 후 다시 로그인 view로 이동하고
 
+```swift
+override func viewWillAppear(_ animated: Bool) {
+        self.login(setLables())
+        }
+```
+로그인 view 에서는** viewWillAppear** 즉, view가 안보였다가 다시 보이게 되었을 때 작동하는 함수를 이용해 login 버튼에 받아온 값들을 넣어서 버튼을 클릭한 효과를 줌
+
+```swift
+        case .success(let token):
+            guard let token = token as? String else { return }
+            UserDefaults.standard.set(token, forKey: "token")
+            guard let tabbarController = self.storyboard?.instantiateViewController(identifier:"customTabbarController") as?
+                UITabBarController else { return }
+            tabbarController.modalPresentationStyle = .fullScreen
+        self.present(tabbarController, animated: true, completion: nil)
+```
+로그인 요청을 보내 token을 이용하여 자동 로그인 기능을 구현함.
+
+- 회원가입 실패시
+
+회원가입이 실패하는 경우에는 4가지 case가 존재한다
+    1. requestErr : 요청에러
+    2. pathErr : 경로에러
+    3. serverErr : 서버 내부 에러
+    4. networkFail : 네트워크 연결 실패 에러 
+
+<img width="248" alt="실패 alter" src="https://user-images.githubusercontent.com/51286963/82604185-dd90d680-9bee-11ea-9ee6-410c32f5d84a.png">
+```swift
+ case .requestErr(let message):
+                guard let message = message as? String else { return }
+                let alertViewController = UIAlertController(title: "회원가입 실패", message: message, preferredStyle: .alert)
+                let action = UIAlertAction(title: "확인", style: .cancel, handler: nil)
+                alertViewController.addAction(action)
+                self.present(alertViewController, animated: true, completion: nil)
+```
+이 중 회원가입에서의 요청에러는 이미 존재하는 id를 사용했을 때 에러가 나기 때문에 message와 함께 alter을 띄어준다.

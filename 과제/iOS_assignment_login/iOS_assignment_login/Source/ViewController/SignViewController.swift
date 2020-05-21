@@ -47,35 +47,33 @@ class SignViewController: UIViewController {
     @IBAction func SignUp(_ sender: Any) {
         //회원가입하기 버튼
         guard let inputID = idTextField.text else { return }
-               guard let inputPWD = pwTextField.text else { return }
-               guard let inputNAME = nameTextField.text else { return }
-               guard let inputEMAIL = emailTextField.text else { return }
-               guard let inputPHONE = phoneTextField.text else { return }
-               
-               SignUpService.shared.signup(id: inputID, pwd: inputPWD, name: inputNAME, email: inputEMAIL, phone: inputPHONE) { networkResult in
-                   switch networkResult {
-                    
-               case .success:
+        guard let inputPWD = pwTextField.text else { return }
+        guard let inputNAME = nameTextField.text else { return }
+        guard let inputEMAIL = emailTextField.text else { return }
+        guard let inputPHONE = phoneTextField.text else { return }
+        SignUpService.shared.signup(id: inputID, pwd: inputPWD, name: inputNAME, email: inputEMAIL, phone: inputPHONE) { networkResult in
+            switch networkResult {
+            case .success:
                 // 회원가입에 성공했을때
                 guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "mainviewcontroller") as? MainViewController else {return}
                 receiveViewController.yourId = inputID //id값 넘겨줌
                 receiveViewController.yourPw = inputPWD //pwd 값 넘겨줌
                 self.navigationController?.show(receiveViewController, sender: self)
                 // 다시 로그인 페이지로 이동
-  
-               case .requestErr(let message):
-                   guard let message = message as? String else { return }
-                   let alertViewController = UIAlertController(title: "회원가입 실패", message: message, preferredStyle: .alert)
-                   let action = UIAlertAction(title: "확인", style: .cancel, handler: nil)
-                   alertViewController.addAction(action)
-                   self.present(alertViewController, animated: true, completion: nil)
-                       
-               case .pathErr: print("path")
-                       
-               case .serverErr: print("serverErr")
-                       
-               case .networkFail: print("networkFail") }
-               }
+                
+            case .requestErr(let message):
+                guard let message = message as? String else { return }
+                let alertViewController = UIAlertController(title: "회원가입 실패", message: message, preferredStyle: .alert)
+                let action = UIAlertAction(title: "확인", style: .cancel, handler: nil)
+                alertViewController.addAction(action)
+                self.present(alertViewController, animated: true, completion: nil)
+                
+            case .pathErr: print("path")
+                
+            case .serverErr: print("serverErr")
+                
+            case .networkFail: print("networkFail") }
+        }
                //회원가입하기 버튼
                /*
                guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "scrollViewController") as? ScrollViewController else {return}
