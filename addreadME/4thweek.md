@@ -1,6 +1,6 @@
 ## 🧸 Network 통신 - 회원가입 API 요청하기 🧸
 
-> #### API
+> ### API
 
 * 회원가입 JSON Data
 
@@ -24,7 +24,7 @@ private func makeParameter(_ id: String, _ pwd: String, _ name: String, _ email:
 ```
 로그인 요청과 달리 회원가입의 RequestBody에는 5개의 Parameter가 들어가는 것을 postman 요청을 통해 확인 한 후 5개의 값을 넣어주었다.
 <br>
-> #### 회원가입 후 자동 로그인
+> ### 회원가입 후 자동 로그인
 
 ![회원가입_자동로그인](./사진/회원가입_자동로그인.gif)
 - 회원가입 시 요구하는 정보를 모두 넣어준 후 회원가입 button을 누르면 login 페이지로 돌아감과 동시에 id와 pw가 채워진 채 자동 로그인이 되어야한다.
@@ -87,14 +87,15 @@ login 버튼에 받아온 id와 pw를 넣어서 버튼을 클릭한 효과를 �
                 self.present(alertViewController, animated: true, completion: nil)
 ```
 이 중 회원가입에서의 요청 error는 이미 존재하는 id를 사용했을 때 error가 발생하기 때문에 message와 함께 alter을 띄어준다.
+
 <br>
-> #### CheckBox를 이용한 자동로그인
+
+> ### CheckBox를 이용한 자동로그인
 
 ![자동로그인Off](./사진/자동로그인Off.gif)
-자동로그인Off - 로그인
+자동로그인Off - 로그인<br>
 ![자동로그인On](./사진/자동로그인On.gif)
 자동로그인On - 로그인
-
 - BEMCheckBox(Cocoapod) 활용한 CheckBox 만들기
 
 ```
@@ -129,7 +130,7 @@ case .success(let token):
 ```
 만약 자동로그인이 on 되어 있다면 (= 클릭 되었다면) id와 pw 값을 UserDefaults의 공유 객체에 저장해준다.
 > 
-Q. UserDefaults는 어떨때 사용할 수 있는걸까요?
+Q. UserDefaults는 어떨때 사용할 수 있는걸까요?<br>
 A. UserDefaults는 앱의 어느곳에서나 데이터를 저장하고 읽게 도와주는 임시 저장소의 역할을 한다. key값과 value값을 저장한 후, 원할 때 key 값을 호출해 값을 불러올 수 있다. 이런 쓰임새로 이번 자동 로그인과제에서도 사용해보았습니다~
 
 => 자동 로그인이 클릭되어있다면, **즉, 내가 정해둔 공유 객체에 값이 저장되어 있다면 ** 앱을 종료했다가 다시 실행했을때 Login 화면이 아닌 홈 화면이 뜨게 설정해줘야한다. 여기서 로그인 화면을 거쳐서 가는게 아닌 바로 홈 화면을 띄우기위해 어떻게 해줘야할까 고민하다가 **SceneDelegate** 를 이용해보았다.
@@ -147,7 +148,7 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 ```
 **scene( ) 함수** 는 앱에 scene에 추가될때 호출되는 함수이기 때문에, 이 함수에서 자동로그인 상태인지 판단을 해줬다. 자동로그인을 눌렀을 때 공유객체에 값을 저장해 두었는데,  autoid에 값이 비어있지 않다면 자동로그인 상태이므로 바로 홈 화면이 있는 Tab으로 이동을 시켜주었다. 만약 값이 없다면 원래대로 로그인 화면으로 Scence가 띄어진다.
 
-- 자동로그인 로그아웃
+- 자동로그인 후 로그아웃
 
 ```swift
 @IBAction func Logout(_ sender: UIButton) {
@@ -162,4 +163,4 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 자동로그인을 해제하기위해 로그아웃 버튼을 생성해주었다. 로그아웃 버튼을 눌렀을 때 **1.로그인 화면으로 이동한다** **2.자동로그인이 해제된다 ** 이렇게 두가지 역할을 해줘한다. 자동로그인 해제를 위해 자동로그인 공유 변수에 저장해두었던 value 값을 removeObject를 통해 지워준다.
 
 
-~~이번 과제 불태웠다.. 맞았으면 좋겠다.. 최선을 다했어요 ㅠ-ㅠ~~~~
+~~이번 과제 불태웠다.. 최선을 다했어요 ㅠ-ㅠ~~~~
