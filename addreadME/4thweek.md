@@ -92,7 +92,7 @@ login 버튼에 받아온 id와 pw를 넣어서 버튼을 클릭한 효과를 �
 
 > ### CheckBox를 이용한 자동로그인
 
-![자동로그인Off](./사진/자동로그인Off.gif)
+![자동로그인Off](./사진/자동로그인Off.gif)
 자동로그인Off - 로그인<br>
 ![자동로그인On](./사진/자동로그인On.gif)
 자동로그인On - 로그인
@@ -133,7 +133,7 @@ case .success(let token):
 Q. UserDefaults는 어떨때 사용할 수 있는걸까요?<br>
 A. UserDefaults는 앱의 어느곳에서나 데이터를 저장하고 읽게 도와주는 임시 저장소의 역할을 한다. key값과 value값을 저장한 후, 원할 때 key 값을 호출해 값을 불러올 수 있다. 이런 쓰임새로 이번 자동 로그인과제에서도 사용해보았습니다~
 
-=> 자동 로그인이 클릭되어있다면, **즉, 내가 정해둔 공유 객체에 값이 저장되어 있다면 ** 앱을 종료했다가 다시 실행했을때 Login 화면이 아닌 홈 화면이 뜨게 설정해줘야한다. 여기서 로그인 화면을 거쳐서 가는게 아닌 바로 홈 화면을 띄우기위해 어떻게 해줘야할까 고민하다가 **SceneDelegate** 를 이용해보았다.
+=> 자동 로그인이 클릭되어있다면, **즉, 내가 정해둔 공유 객체에 값이 저장되어 있다면** 앱을 종료했다가 다시 실행했을때 Login 화면이 아닌 홈 화면이 뜨게 설정해줘야한다. 여기서 로그인 화면을 거쳐서 가는게 아닌 바로 홈 화면을 띄우기위해 어떻게 해줘야할까 고민하다가 **SceneDelegate** 를 이용해보았다.
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -160,7 +160,7 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
         receiveViewController.modalPresentationStyle = .fullScreen
         self.present(receiveViewController, animated: true, completion: nil)
 ```
-자동로그인을 해제하기위해 로그아웃 버튼을 생성해주었다. 로그아웃 버튼을 눌렀을 때 **1.로그인 화면으로 이동한다** **2.자동로그인이 해제된다 ** 이렇게 두가지 역할을 해줘한다. 자동로그인 해제를 위해 자동로그인 공유 변수에 저장해두었던 value 값을 removeObject를 통해 지워준다.
+자동로그인을 해제하기위해 로그아웃 버튼을 생성해주었다. 로그아웃 버튼을 눌렀을 때 **1.로그인 화면으로 이동한다** **2.자동로그인이 해제된다** 이렇게 두가지 역할을 해줘한다. 자동로그인 해제를 위해 자동로그인 공유 변수에 저장해두었던 value 값을 removeObject를 통해 지워준다.
 
 
 ~~이번 과제 불태웠다.. 최선을 다했어요 ㅠ-ㅠ~~~~
