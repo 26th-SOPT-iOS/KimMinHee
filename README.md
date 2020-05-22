@@ -9,7 +9,7 @@
 |**4/25** | <center>stack 활용한 계산기 만들기</center> | |
 |**4/25** | <center>로그인 화면 레이아웃 + 스크롤뷰</center> | <center>*도전과제*</center> |
 |**<center>5/9</center>** | <center>UITableView 활용해 카카오톡 친구 목록 만들기</center> | <center>*도전과제 : delete,alter*</center>|
-|**5/16** | <center>Network 통신 - 회원가입 API 요청하기 </center> |<center>*도전과제 : 회원가입 후 자동로그인, BEMCheckBox 체크 박스 *</center> |
+|**5/16** | <center>Network 통신 - 회원가입 API 요청하기 </center> |<center>*도전과제 : 회원가입 후 자동로그인, BEMCheckBox 체크 박스* </center> |
 
 ## 과제 설명
 [ ✔ ️1st week 과제 ](./addreadME/1stweek.md)<br>
