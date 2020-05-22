@@ -11,7 +11,7 @@ import UIKit
 class ScrollViewController: UIViewController {
     var window: UIWindow?
     @IBAction func Logout(_ sender: UIButton) {
-        guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "mainviewcontroller") as? MainViewController else {return}
+        guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "loginNavi") as? LoginNavigationViewController else {return}
         
         // 객체 변수에 저장해 둔 id와 pw를 지움
         UserDefaults.standard.removeObject(forKey: "autoid")
