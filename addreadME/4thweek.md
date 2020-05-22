@@ -86,3 +86,23 @@ login 버튼에 받아온 id와 pw를 넣어서 버튼을 클릭한 효과를 �
                 self.present(alertViewController, animated: true, completion: nil)
 ```
 이 중 회원가입에서의 요청 error는 이미 존재하는 id를 사용했을 때 error가 발생하기 때문에 message와 함께 alter을 띄어준다
+
+> #### CheckBox를 이용한 자동로그인
+
+- BEMCheckBox(Cocoapod) 활용한 CheckBox 만들기
+
+```
+pod 'BEMCheckBox'
+```
+먼저 Alamofire와 Kingfisher를 설치해 둔 Podfile에 BEMCheckBox 코코아팟을 추가 설치해준다
+
+```swift
+import BEMCheckBox
+
+let checkbox = BEMCheckBox.init(frame: CGRect.init(x: CGFloat(48), y: CGFloat(395), width: CGFloat(15), height: CGFloat(15)))
+```
+설치한 BEMCheckBox를 import 해주고 자리를 정해주면 화면에 띄어지게된다
+
+Check Off             |  Check On
+:-------------------------:|:-------------------------:
+<img alt="자동로그인off" src="https://user-images.githubusercontent.com/51286963/82660309-19668300-9c65-11ea-9e61-ceeb782bdeef.png" width = 50% height = 50%>  |  <img alt="자동로그인on" src="https://user-images.githubusercontent.com/51286963/82660322-1ec3cd80-9c65-11ea-8d77-56a021a1bdd4.png" width = 50% height = 50%>
