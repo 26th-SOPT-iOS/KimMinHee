@@ -105,4 +105,4 @@ let checkbox = BEMCheckBox.init(frame: CGRect.init(x: CGFloat(48), y: CGFloat(39
 
 Check Off             |  Check On
 :-------------------------:|:-------------------------:
-<img alt="자동로그인off" src="https://user-images.githubusercontent.com/51286963/82660309-19668300-9c65-11ea-9e61-ceeb782bdeef.png" width = 50% height = 50%>  |  <img alt="자동로그인on" src="https://user-images.githubusercontent.com/51286963/82660322-1ec3cd80-9c65-11ea-8d77-56a021a1bdd4.png" width = 50% height = 50%>
+<img alt="자동로그인off" src="https://user-images.githubusercontent.com/51286963/82660309-19668300-9c65-11ea-9e61-ceeb782bdeef.png">  |  <img alt="자동로그인on" src="https://user-images.githubusercontent.com/51286963/82660322-1ec3cd80-9c65-11ea-8d77-56a021a1bdd4.png">
