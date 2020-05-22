@@ -15,4 +15,4 @@
 [ ✔ ️1st week 과제 ](./addreadME/1stweek.md)<br>
 [ ✔ ️2nd week 과제 ](./addreadME/2ndweek.md)<br>
 [ ✔ ️3rd week 과제(미작성) ](./addreadME/3rdweek.md)<br>
-[ ✔ ️4th week 과제 ](./addreadME/4thweek.md)<br> (5/22 오전 5시 49분 update..)
+[ ✔ ️4th week 과제(NEW!) ](./addreadME/4thweek.md)<br>
