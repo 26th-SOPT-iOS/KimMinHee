@@ -25,7 +25,7 @@ private func makeParameter(_ id: String, _ pwd: String, _ name: String, _ email:
 로그인 요청과 달리 회원가입의 RequestBody에는 5개의 Parameter가 들어가는 것을 postman 요청을 통해 확인 한 후 5개의 값을 넣어주었다
 <br>
 > #### 회원가입 후 자동 로그인
-
+![회원가입_자동로그인](./사진/회원가입_자동로그인.gif)
 - 회원가입 시 요구하는 정보를 모두 넣어준 후 회원가입 button을 누르면 login 페이지로 돌아감과 동시에 id와 pw가 채워진 채 자동 로그인이 되어야한다
 
 ```swift
