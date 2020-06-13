@@ -27,7 +27,7 @@ class ChattingViewController: UIViewController {
         self.present(actionSheet, animated: true, completion: nil)
         
     }
-    
+    private var pickerController = UIImagePickerController()
     @IBOutlet weak var ChattingTableView: UITableView!
     override func viewDidLoad() {
         
@@ -36,6 +36,7 @@ class ChattingViewController: UIViewController {
         setdataInformations()
         myNavigation()
         MyTabBar()
+        pickerController.delegate = self
         ChattingTableView.dataSource = self
         ChattingTableView.delegate = self
         ChattingTableView.separatorStyle = .none //구분선 제거
@@ -43,7 +44,7 @@ class ChattingViewController: UIViewController {
     }
     private func setdataInformations() {
         let data1 = FriendsInformation(profile: .peach, name: "김민희", message: "")
-        let data2 = FriendsInformation(profile: .apple, name: "김사과", message: "마라탕 선착순 100명")
+        let data2 = FriendsInformation(profile: .apple, name: "류세화", message: "마라탕 선착순 100명")
         let data3 = FriendsInformation(profile: .strawberry, name: "박딸기", message: "중간고사 끝!")
         let data4 = FriendsInformation(profile: .watermelon, name: "박수박", message: "근데 왜 이렇게 바쁜거야")
         let data5 = FriendsInformation(profile: .orange, name: "최오렌지", message: "오렌지 1박스 12000원 카톡주세요")
@@ -91,6 +92,10 @@ extension ChattingViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let friendsCell = tableView.dequeueReusableCell(withIdentifier: FriendsCell.identifier, for: indexPath) as? FriendsCell else { return UITableViewCell() }
         if indexPath.section == 0 {
+            
+            friendsCell.indexPath = indexPath
+            friendsCell.delegate = self
+            
             friendsCell.imageWidth.constant = 60
             friendsCell.labelHeight.constant = 33
             friendsCell.nameLabel.font = UIFont(name: "AppleSDGothicNeo-Bold", size: 17)
@@ -163,5 +168,63 @@ extension ChattingViewController: UITableViewDelegate {
                 
         }
         }
+    }
+}
+extension ChattingViewController: ButtonDelegate {
+    func onClickCellButton(in index: Int) {
+        let alertController = UIAlertController(title: "사진 선택", message: "가져올 곳을 선택하세 요", preferredStyle: .actionSheet)
+        let galleryAction = UIAlertAction(title: "사진앨범", style: .default) { action in self.openLibrary()
+        } // 선택지1: 카메라 앨범 오픈
+        let photoAcgtion = UIAlertAction(title: "카메라", style: .default) { action in self.openCamera()
+        } // 선택지2: 카메라 오픈
+        let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler: nil)
+        // 선택지3: 취소
+        alertController.addAction(galleryAction)
+        alertController.addAction(photoAcgtion)
+        alertController.addAction(cancelAction)
+        self.present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    
+}
+extension ChattingViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func openLibrary() {
+        pickerController.sourceType = .photoLibrary
+        self.present(pickerController, animated: true, completion: nil)
+        
+    }
+    func openCamera() {
+        pickerController.sourceType = .camera
+        self.present(pickerController, animated: true, completion: nil)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage, let url = info[UIImagePickerController.InfoKey.imageURL] as? URL {
+            guard let token = UserDefaults.standard.object(forKey: "token") as? String else { return }
+            UploadService.shared.uploadImage(token, image, url.lastPathComponent) { networkResult in
+                switch networkResult {
+                case .success(let profileData):
+                    guard let profileData = profileData as? [UserProfile] else { return }
+                    print(profileData[0].profile)
+                case .requestErr(let failMessage):
+                    guard let message = failMessage as? String else { return }
+                    print(message)
+                case .pathErr:
+                    print("pathErr")
+                case .serverErr:
+                    print("serverErr")
+                case .networkFail:
+                    print("networkFail")
+                    
+                }
+                
+            }
+            guard let profileCell = ChattingTableView.cellForRow(at: IndexPath(row: 0, section: 0)) as? FriendsCell else { return }
+            //profileCell.profileImage = image
+            profileCell.imageButton.setBackgroundImage(image, for: .normal)
+            
+        }
+        dismiss(animated: true, completion: nil)
+        
     }
 }

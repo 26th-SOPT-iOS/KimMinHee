@@ -672,13 +672,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="94"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cen-VB-TaH">
-                                                    <rect key="frame" x="16" y="12" width="50" height="50"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="Cen-VB-TaH" secondAttribute="height" multiplier="1:1" id="2Lf-ZE-gzA"/>
-                                                        <constraint firstAttribute="width" constant="50" id="w28-yb-pWP"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEB-9l-hYb">
                                                     <rect key="frame" x="88" y="23" width="41" height="26.5"/>
                                                     <fontDescription key="fontDescription" name="KoPubWorldDotumPM" family="KoPubWorldDotum_Pro" pointSize="17"/>
@@ -691,22 +684,32 @@
                                                     <color key="textColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqu-sy-NXR">
+                                                    <rect key="frame" x="16" y="12" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="42M-A7-Sve"/>
+                                                        <constraint firstAttribute="width" secondItem="aqu-sy-NXR" secondAttribute="height" multiplier="1:1" id="Ld7-cK-hKo"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <action selector="setProfile:" destination="gDY-B1-eQ9" eventType="touchUpInside" id="b6q-gF-ch7"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="cEB-9l-hYb" firstAttribute="leading" secondItem="Cen-VB-TaH" secondAttribute="trailing" constant="22" id="eGp-n7-Ce7"/>
-                                                <constraint firstItem="Cen-VB-TaH" firstAttribute="top" secondItem="38X-bW-vCH" secondAttribute="top" constant="12" id="feg-xg-Ewj"/>
-                                                <constraint firstItem="Cen-VB-TaH" firstAttribute="leading" secondItem="38X-bW-vCH" secondAttribute="leading" constant="16" id="mah-ek-C0u"/>
+                                                <constraint firstItem="aqu-sy-NXR" firstAttribute="leading" secondItem="38X-bW-vCH" secondAttribute="leading" constant="16" id="9EG-qM-Rec"/>
+                                                <constraint firstItem="cEB-9l-hYb" firstAttribute="leading" secondItem="aqu-sy-NXR" secondAttribute="trailing" constant="22" id="UZZ-T0-633"/>
                                                 <constraint firstItem="bcg-1B-Wcf" firstAttribute="centerY" secondItem="cEB-9l-hYb" secondAttribute="centerY" id="nhW-D9-gGy"/>
                                                 <constraint firstItem="cEB-9l-hYb" firstAttribute="top" secondItem="38X-bW-vCH" secondAttribute="top" constant="23" id="vSj-1u-Zn2"/>
+                                                <constraint firstItem="aqu-sy-NXR" firstAttribute="top" secondItem="38X-bW-vCH" secondAttribute="top" constant="12" id="xs5-0U-Qpf"/>
                                                 <constraint firstAttribute="trailing" secondItem="bcg-1B-Wcf" secondAttribute="trailing" constant="27" id="zPr-Tn-2c4"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imageWidth" destination="w28-yb-pWP" id="I95-Uz-wUA"/>
+                                            <outlet property="imageButton" destination="aqu-sy-NXR" id="WhZ-85-pgk"/>
+                                            <outlet property="imageWidth" destination="42M-A7-Sve" id="93N-Nr-5ZH"/>
                                             <outlet property="labelHeight" destination="vSj-1u-Zn2" id="3Gk-Xx-GPa"/>
                                             <outlet property="messageLabel" destination="bcg-1B-Wcf" id="6ec-wr-phC"/>
                                             <outlet property="nameLabel" destination="cEB-9l-hYb" id="A1R-g5-LXM"/>
-                                            <outlet property="profileImageView" destination="Cen-VB-TaH" id="DJM-5G-Ru3"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

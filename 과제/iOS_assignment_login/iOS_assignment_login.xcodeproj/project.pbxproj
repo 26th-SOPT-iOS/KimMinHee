@@ -24,6 +24,8 @@
 		3D9EA5FA24767FAF0030364B /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 3D9EA5F924767FAE0030364B /* Classes */; };
 		3D9EA5FC2477E6BA0030364B /* LoginNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9EA5FB2477E6BA0030364B /* LoginNavigationViewController.swift */; };
 		3DA6C86E245BC3E800B91C5D /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6C86D245BC3E800B91C5D /* ScrollViewController.swift */; };
+		3DB41EFA2494CD6600C826D7 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EF92494CD6600C826D7 /* ProfileData.swift */; };
+		3DB41EFC2494CE4D00C826D7 /* UploadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB41EFB2494CE4D00C826D7 /* UploadService.swift */; };
 		3DB948E2246FCF5800125C25 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB948E1246FCF5800125C25 /* APIConstants.swift */; };
 		3DB948E4246FCF6E00125C25 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB948E3246FCF6E00125C25 /* LoginService.swift */; };
 		3DB948E6246FCF8300125C25 /* SigninData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB948E5246FCF8300125C25 /* SigninData.swift */; };
@@ -77,6 +79,8 @@
 		3D9EA5F924767FAE0030364B /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = "<group>"; };
 		3D9EA5FB2477E6BA0030364B /* LoginNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationViewController.swift; sourceTree = "<group>"; };
 		3DA6C86D245BC3E800B91C5D /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		3DB41EF92494CD6600C826D7 /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
+		3DB41EFB2494CE4D00C826D7 /* UploadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadService.swift; sourceTree = "<group>"; };
 		3DB948E1246FCF5800125C25 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		3DB948E3246FCF6E00125C25 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		3DB948E5246FCF8300125C25 /* SigninData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninData.swift; sourceTree = "<group>"; };
@@ -193,6 +197,8 @@
 				3DB948E7246FCF9700125C25 /* NetworkResult.swift */,
 				3DB948E5246FCF8300125C25 /* SigninData.swift */,
 				3DB948EF246FD95000125C25 /* SignupData.swift */,
+				3DB41EF92494CD6600C826D7 /* ProfileData.swift */,
+				3DB41EFB2494CE4D00C826D7 /* UploadService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -510,7 +516,9 @@
 				3D5F60AA244B02EE00D9220F /* SignViewController.swift in Sources */,
 				3D5504E7246AF9A100CBC945 /* FriendsInformation.swift in Sources */,
 				3DB948E8246FCF9700125C25 /* NetworkResult.swift in Sources */,
+				3DB41EFC2494CE4D00C826D7 /* UploadService.swift in Sources */,
 				3D5F6074244AE5AA00D9220F /* AppDelegate.swift in Sources */,
+				3DB41EFA2494CD6600C826D7 /* ProfileData.swift in Sources */,
 				3DA6C86E245BC3E800B91C5D /* ScrollViewController.swift in Sources */,
 				3D70159D246DA02D000BF1AE /* CustomMyController.swift in Sources */,
 				3DB948E2246FCF5800125C25 /* APIConstants.swift in Sources */,
